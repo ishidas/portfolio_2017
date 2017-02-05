@@ -1,9 +1,10 @@
 $app-font-color: #333333;
 $app-background-color: white;
-
+$main-font: 'Roboto', sans-serif;
 body {
   background-color: $app-background-color;
   color: $app-font-color;
+  font-family: $main-font;
 }
 
 main {
@@ -17,7 +18,7 @@ nav {
 
 ul {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   padding: 0;
   list-style: none;
   text-align: right;
@@ -28,6 +29,17 @@ li {
   margin-right: 3%;
 }
 
+a {
+  text-decoration: none;
+}
+.intro-sec {
+  padding: 5%;
+}
 h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+p {
   text-align: center;
 }
