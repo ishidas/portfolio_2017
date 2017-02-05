@@ -7,6 +7,10 @@ angular.module('myApp', []).controller('MainController', ['$scope',($scope) => {
   $scope.test = 'testing';
   $scope.imgUrl = bgimgUrl;
 
+}]).controller('scrollController', ['$scope','$location','$anchorScroll', ($scope, $location, $anchorScroll) => {
+  $scope.jumpToPageTwo = () => {
+    $location.hash('pagetwo');
+  }
 }]).directive('myNav', () => {
   return {
     restrict: 'E',
@@ -16,6 +20,16 @@ angular.module('myApp', []).controller('MainController', ['$scope',($scope) => {
   return {
     restrict: 'E',
     templateUrl: './app/templates/myIntro.html'
+  }
+}).directive('myEduSection', () => {
+  return {
+    restrict: 'E',
+    templateUrl: './app/templates/myEdu.html'
+  }
+}).directive('myExperienceSection', () => {
+  return {
+    restrict: 'E',
+    templateUrl: './app/templates/myExperience.html'
   }
 });
 
