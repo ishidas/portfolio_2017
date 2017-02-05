@@ -69,7 +69,7 @@ img {
   max-width: 100%;
 }
 
-.education-sec, .exp-sec {
+.education-sec, .skills-sec {
   width: 100%;
   height: 50em;
   // background-color: black;
@@ -98,6 +98,15 @@ img {
   height: 5em;
 }
 
-h3 {
+h3, .skills-sec {
   position: relative;
+}
+
+
+
+.book-img-div {
+  width: 20%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
