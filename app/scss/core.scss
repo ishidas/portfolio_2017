@@ -1,0 +1,33 @@
+$app-font-color: #333333;
+$app-background-color: white;
+
+body {
+  background-color: $app-background-color;
+  color: $app-font-color;
+}
+
+main {
+  height: 50em;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+ul {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+li {
+  display: inline-block;
+  margin-right: 3%;
+}
+
+h1 {
+  text-align: center;
+}
