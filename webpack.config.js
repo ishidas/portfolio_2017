@@ -24,6 +24,10 @@ module.exports = {
           presets: ['es2015']
         }
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: "file-loader?name=[path][name].[ext]"
+      }
     ]
   }
 };

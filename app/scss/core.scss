@@ -32,9 +32,7 @@ li {
 a {
   text-decoration: none;
 }
-.intro-sec {
-  padding: 5%;
-}
+
 h1 {
   text-align: center;
   font-size: 2em;
@@ -42,4 +40,17 @@ h1 {
 
 p {
   text-align: center;
+}
+
+.intro-sec {
+  padding: 0 5% 5% 5%;
+}
+
+.intro-sec > div {
+  position: relative;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
 }
