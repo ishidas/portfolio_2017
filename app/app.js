@@ -1,6 +1,6 @@
 import angular from 'angular';
 require('!style-loader!css-loader!sass-loader!./scss/core.scss');
-require('font-awesome-webpack');
+// require('font-awesome-webpack');
 
 const bgimgUrl = require('./scss/img/mfnbfaciu1i-patrick-schneider.png');
 const bookImgUrl = require('./scss/img/books.jpg');
