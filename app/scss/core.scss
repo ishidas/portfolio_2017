@@ -1,7 +1,9 @@
+@import "./animation.scss";
 $app-font-color: #333333;
 $app-background-color: white;
-$main-font: 'Arapey', serif;
+$main-font: 'Alice', serif;
 $box-background-color: rgba(250,250,255,0.3);
+$app-shadow-color: rgba(7,7,7,0.4);
 
 html, body {
   width: 100%;
@@ -41,15 +43,30 @@ li {
 
 a {
   text-decoration: none;
+  font-size: 1.5em;
 }
 
-.intro-sec > div > h1 {
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: lightsteelblue;
+}
+
+.intro-sec > div > h1 , .intro-sec > div > h3 {
   top: 45%;
   position: absolute;
   margin: 0;
   width: 100%;
+  text-shadow: 8px 5px 3px $app-shadow-color;
 }
 
+.intro-sec > div > h3 {
+  text-align: center;
+  font-style: italic;
+  top: 55%;
+}
 h1 {
   text-align: center;
   font-size: 2em;
@@ -81,6 +98,10 @@ h1 {
   top: 0;
 }
 
+.intro-sec > div > p {
+  margin: 5%;
+  text-align: center;
+}
 img {
   max-width: 100%;
 }
@@ -104,7 +125,7 @@ img {
 .edu-div {
   display: inline-block;
   position: relative;
-  width: 40%;
+  max-width: 493px;
   margin: 0 auto;
 }
 
@@ -112,9 +133,10 @@ img {
   position: relative;
   font-size: 1em;
   height: 5em;
+  padding: 0 5%;
 }
 
-h3, .skills-sec {
+.education-sec > section > div > h3, .skills-sec {
   position: relative;
 }
 
@@ -123,6 +145,7 @@ h3, .skills-sec {
 .book-img-div {
   width: 20%;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 2%;
+  bottom: 2%;
+  box-shadow:7px 7px 5px $app-shadow-color;
 }
