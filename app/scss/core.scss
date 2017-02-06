@@ -148,3 +148,13 @@ img {
   display: inline-block;
   margin: 5%;
 }
+
+.svg-layer {
+  max-width: 100%;
+  position: absolute;
+}
+
+svg {
+  max-width: 100%;
+  height: 100%;
+}
