@@ -4,12 +4,13 @@ require('!style-loader!css-loader!sass-loader!./scss/core.scss');
 
 const bgimgUrl = require('./scss/img/mfnbfaciu1i-patrick-schneider.png');
 const bookImgUrl = require('./scss/img/books.jpg');
-
+const bulbsGif = require('./scss/img/bulbs-bg-animated.gif');
 angular.module('myApp', []).controller('MainController', ['$scope',($scope) => {
   console.log('hitting');
   $scope.test = 'testing';
   $scope.imgUrl = bgimgUrl;
   $scope.bookImgUrl = bookImgUrl;
+  $scope.bulbsGif = bulbsGif;
 
 }]).controller('scrollController', ['$scope','$location','$anchorScroll', ($scope, $location, $anchorScroll) => {
   $scope.jumpToPageTwo = () => {
