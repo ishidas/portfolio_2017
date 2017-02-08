@@ -72,12 +72,12 @@ a:visited {
 h1 {
   text-align: center;
   font-size: 2em;
-  margin: 15% auto;
+  margin: 10% auto;
 }
 
 
 .intro-sec {
-  height: 45em;
+  height: 50em;
   position: relative;
 }
 
@@ -124,23 +124,24 @@ img {
 
 .education-sec, .skills-sec {
   width: 100%;
-  height: 40em;
+  // height: 40em;
   // background-color: black;
   border-width:5px;
   border-style:outset;
+  eight: auto;
 }
 
 .inner-edu-sec {
   width: 100%;
   height: 76%;
   text-align: center;
-  padding-top: 5%;
+  margin: 10% auto;
 }
 
 .edu-div {
   display: inline-block;
   position: relative;
-  max-width: 493px;
+  max-width: 40%;
   margin: 0 auto;
 }
 
@@ -165,9 +166,8 @@ img {
 // }
 .book-img-div {
   width: 30%;
-  position: absolute;
-  right: 2%;
-  bottom: 2%;
+  position: relative;
+  margin: 2% 2% 2% 68%;
   box-shadow:7px 7px 5px $app-shadow-color;
 }
 
@@ -209,15 +209,29 @@ img {
   color: white;
   position: absolute;
   bottom: 0;
-  right: 45%;
+  right: 50%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 374px) {
+
   .book-img-div {
-    width: 95%;
-    position: absolute;
-    right: 4%;
-    bottom: 2%;
+    width: 65%;
+    position: relative;;
+    // right: 4%;
+    // bottom: 2%;
+    margin: 0 auto;
     box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
+  }
+
+  .intro-sec {
+    height: 45em;
+    position: relative;
+  }
+}
+
+@media (min-width: 1070px) {
+  .intro-sec > .intro-paragraph-div {
+    position: absolute;
+    top: 50%;
   }
 }
