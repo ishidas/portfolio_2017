@@ -58,6 +58,7 @@ a:visited {
 
 a:hover {
   color: $app-h1-intro-color;
+  font-size: 2em;
 }
 .intro-sec > div > h1 , .intro-sec > div > h3 {
   top: 45%;
@@ -173,7 +174,7 @@ img {
 }
 
 .book-img-div {
-  width: 25%;
+  width: 20%;
   position: relative;
   margin: 2% 2% 2% 75%;
   box-shadow:7px 7px 5px $app-shadow-color;

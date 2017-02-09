@@ -1,7 +1,8 @@
 import angular from 'angular';
 import ngRoute from 'angular-route';
-require('!style-loader!css-loader!sass-loader!./scss/core.scss');
+// import ngAnimate from 'angular-animate';
 
+require('!style-loader!css-loader!sass-loader!./scss/core.scss');
 
 const bgimgUrl = require('./scss/img/mfnbfaciu1i-patrick-schneider.png');
 const bookImgUrl = require('./scss/img/books.jpg');
