@@ -149,7 +149,7 @@ img {
 .edu-div {
   display: inline-block;
   position: relative;
-  max-width: 40%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -267,5 +267,11 @@ img {
     position: relative;
     top: 0;
     color: $app-link-visited;
+  }
+  .edu-div {
+    display: inline-block;
+    position: relative;
+    max-width: 40%;
+    margin: 0 auto;
   }
 }
