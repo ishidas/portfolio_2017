@@ -1,37 +1,62 @@
 import angular from 'angular';
+import ngRoute from 'angular-route';
 require('!style-loader!css-loader!sass-loader!./scss/core.scss');
-// require('font-awesome-webpack');
+
 
 const bgimgUrl = require('./scss/img/mfnbfaciu1i-patrick-schneider.png');
 const bookImgUrl = require('./scss/img/books.jpg');
 const bulbsGif = require('./scss/img/bulbs-bg-animated.gif');
-angular.module('myApp', []).controller('MainController', ['$scope',($scope) => {
+const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($locationProvider) => {
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
+}])
+App.controller('MainController', ['$scope','$location','$anchorScroll', ($scope, $location, $anchorScroll) => {
   console.log('hitting');
   $scope.test = 'testing';
   $scope.imgUrl = bgimgUrl;
   $scope.bookImgUrl = bookImgUrl;
   $scope.bulbsGif = bulbsGif;
 
-}]).controller('scrollController', ['$scope','$location','$anchorScroll', ($scope, $location, $anchorScroll) => {
-  $scope.jumpToPageTwo = () => {
-    $location.hash('pagetwo');
+  $scope.jumpToHome = () => {
+    $location.hash('home');
+    $anchorScroll();
   }
-}]).directive('myNav', () => {
+
+  $scope.jumpToEducation = () => {
+    $location.hash('education');
+    $anchorScroll();
+  }
+
+  $scope.jumpToSkills = () => {
+    $location.hash('skills');
+    $anchorScroll();
+  }
+
+}])
+.controller('scrollController', ['$scope','$location','$anchorScroll', ($scope, $location, $anchorScroll) => {
+
+}])
+.directive('myNav', () => {
   return {
     restrict: 'E',
     templateUrl: './app/templates/nav.html'
   }
-}).directive('myIntroSection', () => {
+})
+.directive('myIntroSection', () => {
   return {
     restrict: 'E',
     templateUrl: './app/templates/myIntro.html'
   }
-}).directive('myEduSection', () => {
+})
+.directive('myEduSection', () => {
   return {
     restrict: 'E',
     templateUrl: './app/templates/myEdu.html'
   }
-}).directive('mySkillsSection', () => {
+})
+.directive('mySkillsSection', () => {
   return {
     restrict: 'E',
     templateUrl: './app/templates/mySkills.html'
