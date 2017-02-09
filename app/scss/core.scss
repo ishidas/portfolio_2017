@@ -127,11 +127,14 @@ img {
   max-width: 100%;
 }
 
-.education-sec,  {
+.education-sec {
   width: 100%;
   border-width:5px;
   border-style:outset;
   height: 50em;
+  background: url('./img/bulbs-bg-animated.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .skills-sec {
@@ -242,12 +245,18 @@ img {
     text-align: center;
   }
 
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 30% auto;
+  }
+
   .book-img-div {
     width: 65%;
     position: relative;;
     margin: 0 auto;
     box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
-    top: 10%;
+    top: 0;
   }
 
   .intro-sec {
@@ -259,6 +268,23 @@ img {
 @media (max-width: 600px) {
   nav > ul {
     display: none;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20% auto;
+  }
+  
+  .next-button-div2 {
+    width: 2em;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    height: 3em;
+    position: relative;
+    top: 0;
+    color: $app-link-visited;
   }
 
   .book-img-div {
