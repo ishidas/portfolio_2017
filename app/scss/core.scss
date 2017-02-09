@@ -135,7 +135,9 @@ img {
 }
 
 .skills-sec {
-  height: auto;
+  height: 50em;
+  position: absolute;
+  width: 100%;
 }
 
 .inner-edu-sec {
@@ -160,7 +162,7 @@ img {
   padding: 0 5%;
 }
 
-.education-sec > section > div > h3, .skills-sec {
+.education-sec > section > div > h3{
   position: relative;
 }
 
@@ -178,6 +180,7 @@ img {
   position: relative;
   margin: 2% 2% 2% 75%;
   box-shadow:7px 7px 5px $app-shadow-color;
+  top: 30%;
 }
 
 
@@ -230,7 +233,7 @@ img {
 }
 
 
-@media (max-width: 374px) {
+@media (max-width: 460px) {
   nav > ul {
     position: relative;
     max-width: 100%;
@@ -244,6 +247,7 @@ img {
     position: relative;;
     margin: 0 auto;
     box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
+    top: 10%;
   }
 
   .intro-sec {
@@ -252,10 +256,32 @@ img {
   }
 }
 
+@media (max-width: 600px) {
+  nav > ul {
+    display: none;
+  }
+
+  .book-img-div {
+    width: 65%;
+    position: relative;;
+    margin: 0 auto;
+    box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
+    top: 10%;
+  }
+}
+
 @media (min-width: 1070px) {
   .intro-sec > .intro-paragraph-div {
     position: absolute;
     top: 50%;
+  }
+
+  .inner-edu-sec {
+    width: 100%;
+    height: 45%;
+    text-align: center;
+    margin: 0% auto;
+    position: relative;
   }
 
   .next-button-div2 {
