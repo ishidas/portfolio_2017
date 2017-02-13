@@ -9,7 +9,7 @@ $app-link-visited: #6292BC;
 
 html, body {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0;
   background-color: $app-background-color;
   color: $app-font-color;
@@ -18,13 +18,13 @@ html, body {
 
 main {
   width: 100%;
-  position: absolute;
-  height: auto;
-
+  height: 100%;
+  // position: absolute;
 }
 
 nav {
   position: fixed;
+  height: auto;
   display: inline-block;
   width: 100%;
   z-index: 1;
@@ -60,30 +60,38 @@ a:hover {
   color: $app-h1-intro-color;
   font-size: 2em;
 }
+
+
 .intro-sec > div > h1 , .intro-sec > div > h3 {
-  top: 45%;
+  // top: 45%;
+  // position: relative;
+  // margin: 0;
+  // width: 100%;
+  // color: $app-h1-intro-color;
+  // text-shadow: 8px 5px 3px $app-shadow-color;
   position: relative;
-  margin: 0;
+  padding: 24% 0 5% 0;
   width: 100%;
-  color: $app-h1-intro-color;
-  text-shadow: 8px 5px 3px $app-shadow-color;
+  color: lightgoldenrodyellow;
+  text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
 }
 
 .intro-sec > div > h3 {
   text-align: center;
   font-style: italic;
-  top: 55%;
+  // top: 55%;
+  padding: 10% 0 5% 0;
 }
 h1 {
   text-align: center;
   font-size: 2em;
-  margin: 10% auto;
+  margin: 0 auto;
 }
 
 
 .intro-sec {
-  height: 50em;
-  position: relative;
+  // height: 50em;
+  // position: relative;
 }
 
 .intro-sec > .intro-img-div {
@@ -95,9 +103,9 @@ h1 {
 
 .intro-sec > .name-title-div {
     background: url("img/mfnbfaciu1i-patrick-schneider.png") no-repeat center center fixed;
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 25em;
+    height: 40%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -105,23 +113,36 @@ h1 {
 }
 
 .intro-sec > .intro-paragraph-div {
-  position: absolute;
-  bottom: 2%;
+  // position: absolute;
+  // bottom: 2%;
+  position: relative;
+  display: inline-block;
+  height: 60%;
 }
-.intro-sec > div > p:first-child {
-  margin: 5%;
+.intro-sec > div > p {
+  padding: 0% 5%;
   text-align: center;
   position: relative;
-  overflow: auto;
-  height: 100px;
+  margin: 5% auto;
+  height: 20%;
 }
-.intro-sec > div > p:last-child {
-  margin: 5%;
-  text-align: center;
-  position: relative;
-  overflow: auto;
-  height: 150px;
+
+.intro-sec > div > .p-tag2 {
+  height: 55%;
 }
+// .intro-sec > div > p:last-child {
+  // margin: 5%;
+  // text-align: center;
+  // position: relative;
+  // overflow: auto;
+  // height: 150px;
+  // padding: 0% 5%;
+  // display: inline-block;
+  // height: 70%;
+  // position: relative;
+  // margin-bottom: 0;
+  // text-align: center;
+// }
 
 img {
   max-width: 100%;
@@ -131,21 +152,23 @@ img {
   width: 100%;
   border-width:5px;
   border-style:outset;
-  height: 50em;
+  // height: 50em;
   background: url('./img/bulbs-bg-animated.gif');
   background-size: contain;
   background-repeat: no-repeat;
+  position: relative;
+  height: 100%;
 }
 
 .skills-sec {
-  height: 50em;
+  height: 100%;
   position: absolute;
   width: 100%;
 }
 
 .inner-edu-sec {
   width: 100%;
-  height: 50%;
+  height: 47%;
   text-align: center;
   margin: 0% auto;
   position: relative;
@@ -165,6 +188,10 @@ img {
   padding: 0 5%;
 }
 
+.education-sec > h1 {
+  position: relative;
+  padding: 10% 0 5% 0;
+}
 .education-sec > section > div > h3{
   position: relative;
 }
@@ -217,11 +244,15 @@ img {
 .next-button-div {
   max-width: 2em;
   text-align: center;
-  margin: 0 50%;
+  margin: 0 42%;
   color: black;
-  position: absolute;
-  bottom: 3%;
+  position: relative;
+  // bottom: 10%;
   color: $app-link-visited;
+}
+
+.next-button-div > i, .next-button-div2 > i {
+  font-size: 2.5em;
 }
 
 .next-button-div2 {
@@ -235,7 +266,11 @@ img {
   color: $app-link-visited;
 }
 
-
+@media (max-width: 320px) {
+  .intro-sec > div > p {
+    overflow: scroll;
+  }
+}
 @media (max-width: 460px) {
   nav > ul {
     position: relative;
@@ -248,7 +283,7 @@ img {
   h1 {
     text-align: center;
     font-size: 2em;
-    margin: 30% auto;
+    // margin: 30% auto;
   }
 
   .book-img-div {
@@ -260,8 +295,8 @@ img {
   }
 
   .intro-sec {
-    height: 45em;
-    position: relative;
+    height: 100%;
+    // position: relative;
   }
 }
 
@@ -271,20 +306,24 @@ img {
   }
 
   h1 {
+    // text-align: center;
+    // font-size: 2em;
+    // margin: 20% auto;
     text-align: center;
     font-size: 2em;
-    margin: 20% auto;
   }
-  
+  .skills-sec > h1 {
+    padding: 5% 0;
+  }
   .next-button-div2 {
     width: 2em;
     text-align: center;
     margin: 0 auto;
-    color: black;
+    padding: 10%;
     height: 3em;
     position: relative;
-    top: 0;
-    color: $app-link-visited;
+    top: 25%;
+    color: #6292BC;
   }
 
   .book-img-div {
@@ -292,7 +331,7 @@ img {
     position: relative;;
     margin: 0 auto;
     box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
-    top: 10%;
+    top: 0;
   }
 }
 

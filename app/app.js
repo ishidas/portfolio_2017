@@ -13,8 +13,7 @@ const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($
     requireBase: false
   });
 }])
-App.controller('MainController', ['$scope','$location','$anchorScroll', ($scope, $location, $anchorScroll) => {
-  console.log('hitting');
+App.controller('MainController', ['$scope','$location','$anchorScroll','$window','$element','$document', ($scope, $location, $anchorScroll, $window, $element, $document) => {
   $scope.test = 'testing';
   $scope.imgUrl = bgimgUrl;
   $scope.bookImgUrl = bookImgUrl;
@@ -34,6 +33,24 @@ App.controller('MainController', ['$scope','$location','$anchorScroll', ($scope,
     $location.hash('skills');
     $anchorScroll();
   }
+
+  // $scope.detectOverlap = () => {
+  //   $scope.dcmt = angular.element($document).find('section').children();
+  //
+  //   $scope.secElements = $scope.dcmt.find('section').children();
+  //   $scope.navElement = $scope.dcmt.find('nav');
+  //   console.log($scope.secElements);
+  //   console.log($scope.navElement);
+  //   $scope.secElTop = $scope.secElements[1].offsetTop;
+  //   $scope.navEle = $scope.navElement[0];
+  //   // let diff = secElTop - navElBottom;
+  //
+  //   console.log($scope.navElBottom);
+  //   if($scope.secElTop <= 60) {
+  //     $scope.navEle.css('color: black');
+  //   }
+  // }
+  // $scope.detectOverlap();
 
 }])
 .controller('scrollController', ['$scope','$location','$anchorScroll', ($scope, $location, $anchorScroll) => {
