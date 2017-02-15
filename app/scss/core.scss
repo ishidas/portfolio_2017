@@ -40,7 +40,9 @@ nav > ul {
 
 nav > ul > li {
   display: inline-block;
-  margin-right: 3%;
+  text-align: center;
+  height: auto;
+  width: 20%;
 }
 
 a {
@@ -70,7 +72,7 @@ a:hover {
   // color: $app-h1-intro-color;
   // text-shadow: 8px 5px 3px $app-shadow-color;
   position: relative;
-  padding: 24% 0 5% 0;
+  padding: 16% 0 1% 0;
   width: 100%;
   color: lightgoldenrodyellow;
   text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
@@ -82,6 +84,7 @@ a:hover {
   // top: 55%;
   padding: 10% 0 5% 0;
 }
+
 h1 {
   text-align: center;
   font-size: 2em;
@@ -90,7 +93,7 @@ h1 {
 
 
 .intro-sec {
-  // height: 50em;
+  height: 100%;
   // position: relative;
 }
 
@@ -105,7 +108,7 @@ h1 {
     background: url("img/mfnbfaciu1i-patrick-schneider.png") no-repeat center center fixed;
     position: relative;
     width: 100%;
-    height: 40%;
+    height: 55%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -120,15 +123,20 @@ h1 {
   height: 60%;
 }
 .intro-sec > div > p {
-  padding: 0% 5%;
+  padding: 0% 3% 0 3%;
   text-align: center;
   position: relative;
-  margin: 5% auto;
-  height: 20%;
+  // margin: 5% auto;
+  // height: 20%;
 }
 
 .intro-sec > div > .p-tag2 {
-  height: 55%;
+  height: 35%;
+  padding-top: 3%;
+}
+
+.intro-sec > div > .p-tag1 {
+  padding: 3% 0% 0% 0%;
 }
 // .intro-sec > div > p:last-child {
   // margin: 5%;
@@ -208,9 +216,10 @@ img {
 .book-img-div {
   width: 20%;
   position: relative;
-  margin: 2% 2% 2% 75%;
+  // margin: 2% 2% 2% 75%;
+  margin: 0% 2% 0% 75%;
   box-shadow:7px 7px 5px $app-shadow-color;
-  top: 30%;
+  // top: 30%;
 }
 
 
@@ -229,6 +238,9 @@ img {
   margin: 5%;
 }
 
+.skills-sec > .skills-h1 {
+  padding: 5% 0 0 0;
+}
 
 .intro-sec > div > span, .intro-sec > div > i {
   width: 100%;
@@ -244,10 +256,8 @@ img {
 .next-button-div {
   max-width: 2em;
   text-align: center;
-  margin: 0 42%;
-  color: black;
+  margin: 0 50%;
   position: relative;
-  // bottom: 10%;
   color: $app-link-visited;
 }
 
@@ -262,88 +272,33 @@ img {
   color: black;
   height: 3em;
   position: relative;
-  top: 10%;
+  top: 15%;
   color: $app-link-visited;
 }
 
-@media (max-width: 320px) {
-  .intro-sec > div > p {
-    overflow: scroll;
-  }
-}
-@media (max-width: 460px) {
-  nav > ul {
-    position: relative;
-    max-width: 100%;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
 
-  h1 {
-    text-align: center;
-    font-size: 2em;
-    // margin: 30% auto;
-  }
 
-  .book-img-div {
-    width: 65%;
-    position: relative;;
-    margin: 0 auto;
-    box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
-    top: 0;
-  }
-
-  .intro-sec {
-    height: 100%;
-    // position: relative;
-  }
-}
-
-@media (max-width: 600px) {
-  nav > ul {
-    display: none;
-  }
-
-  h1 {
-    // text-align: center;
-    // font-size: 2em;
-    // margin: 20% auto;
-    text-align: center;
-    font-size: 2em;
-  }
-  .skills-sec > h1 {
-    padding: 5% 0;
-  }
-  .next-button-div2 {
-    width: 2em;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10%;
-    height: 3em;
-    position: relative;
-    top: 25%;
-    color: #6292BC;
-  }
-
-  .book-img-div {
-    width: 65%;
-    position: relative;;
-    margin: 0 auto;
-    box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
-    top: 0;
-  }
-}
 
 @media (min-width: 1070px) {
+  nav > ul > li {
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    width: 10%;
+  }
+  .intro-sec > div > h3 {
+    text-align: center;
+    font-style: italic;
+    padding: 0% 0 5% 0;
+  }
   .intro-sec > .intro-paragraph-div {
     position: absolute;
-    top: 50%;
+    height: 45%;
   }
 
   .inner-edu-sec {
     width: 100%;
-    height: 45%;
+    height: 55%;
     text-align: center;
     margin: 0% auto;
     position: relative;
@@ -364,5 +319,118 @@ img {
     position: relative;
     max-width: 40%;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+  .intro-sec > div > h3 {
+    text-align: center;
+    font-style: italic;
+    padding: 0% 0 5% 0;
+  }
+  .intro-sec {
+    height: 100%;
+  }
+
+  .intro-sec > div > .p-tag2 {
+    height: 55%;
+    margin-bottom: 0;
+  }
+
+  .skills-sec > h1 {
+    padding: 5% 0% 0% 0%;
+  }
+
+  .next-button-div {
+    max-width: 2em;
+    text-align: center;
+    margin: 0 48%;
+    position: relative;
+    color: #6292BC;
+    text-align: center;
+  }
+  .education-sec > h1 {
+    position: relative;
+    padding: 15% 0 5% 0;
+  }
+  .next-button-div2 {
+    width: 2em;
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+    top: 25%;
+    color: #6292BC;
+  }
+
+  .book-img-div {
+    width: 50%;
+    position: relative;;
+    margin: 0 auto;
+    box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
+    top: 0;
+  }
+
+}
+
+
+@media (max-width: 460px) {
+  nav > ul {
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    // margin: 30% auto;
+  }
+  nav > ul > li {
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    width: 30%;
+    font-size: 1em;
+  }
+  .intro-sec > div > h1 {
+    padding-top: 50%;
+  }
+  .education-sec > h1 {
+    padding-top: 30%;
+  }
+  .skills-sec > .skills-h1 {
+    padding-top: 30%;
+  }
+  .book-img-div {
+    width: 65%;
+    position: relative;;
+    margin: 0 auto;
+    box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
+    top: 10%;
+  }
+
+  .intro-sec {
+    height: 100%;
+    // position: relative;
+  }
+  .intro-sec > div > .p-tag2 {
+    height: 30%;
+    margin-bottom: 0;
+    overflow: scroll;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .intro-sec > div > p {
+    overflow: scroll;
   }
 }
