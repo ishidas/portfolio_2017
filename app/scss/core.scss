@@ -254,8 +254,7 @@ img {
   bottom: 5%;
 }
 
-
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   main {
     font-size: 1em;
   }
@@ -327,6 +326,82 @@ img {
   }
   .book-img-div {
     width: 15%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  main {
+    font-size: 1em;
+  }
+  nav {
+    margin-top: 2%;
+  }
+  nav > ul {
+    text-align: right;
+  }
+  nav > ul > li {
+    width: auto;
+    margin: 0 5%;
+  }
+  nav > ul > li > a {
+    font-size: 1.5em;
+  }
+  nav > ul > li > a:hover {
+    font-size: 2em;
+  }
+  .intro-sec > .name-title-div > h3 {
+    font-size: 1.5em;
+  }
+  .intro-sec > .name-title-div > h1 {
+    padding: 18% 0 0 0;
+    font-size: 1.5em;
+  }
+  .intro-sec > div > .p-tag1 {
+    overflow: scroll;
+    font-size: 1em;
+    padding: 0 3% 0 3%;
+  }
+  .intro-sec > div > .p-tag2 {
+    overflow: scroll;
+    font-size: 1em;
+    height: 44%;
+  }
+  .next-button-div {
+    position: absolute;
+    bottom: 5%;
+  }
+  .education-sec > h1 , .skills-sec > .skills-h1 {
+    font-size: 2em;
+    padding: 15% 0 5% 0;
+    font-size: 1.5em;
+    width: 100%;
+    color: black;
+    text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+  }
+  .skills-sec > .skills-h1 {
+    font-size: 2em;
+    padding: 15% 0 2% 0;
+    font-size: 1.5em;
+    width: 100%;
+    color: black;
+    text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+  }
+  .inner-edu-sec {
+    height: 50%;
+  }
+  .edu-div {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1em;
+  }
+  .skills-sec > ul {
+    height: 30%
+  }
+  .book-img-div {
+    width: 20%;
   }
 }
 
