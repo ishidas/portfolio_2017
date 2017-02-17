@@ -1,12 +1,17 @@
 @import "./animation.scss";
 $app-font-color: #333333;
 $app-background-color: white;
-$main-font: 'Alice', serif;
+$main-font: fantasy;
+// 'Alice', serif
 $box-background-color: rgba(250,250,255,0.3);
 $app-shadow-color: rgba(7,7,7,0.4);
 $app-h1-intro-color: lightgoldenrodyellow;
-$app-link-visited: #6292BC;
-
+$app-link-hover: #6292BC;
+$app-link-visited: darkseagreen;
+$text-shadow-black: -5px 2px 3px rgba(7, 7, 7, 0.6);
+$nav-background-black-opac: rgba(0, 0, 0, 0.65);
+$nav-box-shadow: 7px 7px 5px $app-shadow-color;
+$edu-skills-intro-h-color: darksalmon;
 html, body {
   width: 100%;
   height: 100%;
@@ -27,7 +32,8 @@ nav {
   display: inline-block;
   width: 100%;
   z-index: 1;
-  margin-top: 5%;
+  // background-color: $nav-background-black-opac;
+  // box-shadow: $nav-box-shadow;
 }
 
 nav > ul {
@@ -36,6 +42,7 @@ nav > ul {
   padding: 0;
   list-style: none;
   text-align: right;
+  margin: 0;
 }
 
 nav > ul > li {
@@ -51,7 +58,7 @@ a {
 }
 
 a:link {
-  color: white;
+  color: $app-font-color;
 }
 
 a:visited {
@@ -59,23 +66,23 @@ a:visited {
 }
 
 a:hover {
-  color: $app-h1-intro-color;
+  color: $app-link-hover;
   font-size: 3em;
 }
 
-.intro-sec > div > h1  {
+.home-sec > div > h1  {
   position: relative;
   padding: 40% 0 1% 0;
   width: 100%;
   color: lightgoldenrodyellow;
-  text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+  text-shadow: $text-shadow-black;
 }
 
-.intro-sec > div > h3 {
+.home-sec > div > h3 {
   position: relative;
   width: 100%;
   color: lightgoldenrodyellow;
-  text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+  text-shadow: $text-shadow-black;
   text-align: center;
   font-style: italic;
   font-size: 4em;
@@ -89,32 +96,48 @@ h1 {
 }
 
 
-.intro-sec {
+.home-sec {
   height: 100%;
 }
 
-.intro-sec > .intro-img-div {
+.home-sec > .intro-img-div {
   position: absolute;
   width: 100%;
   height: auto;
   top: 0;
 }
 
-.intro-sec > .name-title-div {
+.home-sec > .name-title-div {
     background: url("img/mfnbfaciu1i-patrick-schneider.png") no-repeat center center fixed;
     position: relative;
     width: 100%;
-    height: 55%;
+    height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
+.home-sec > .name-title-div > .next-button-div-3 {
+  max-width: 2em;
+  text-align: center;
+  margin: 0 50%;
+  position: absolute;
+  color: $app-link-visited;
+  bottom: 5%;
+}
+.intro-sec {
+  height: 100%;
+  background: url('./img/bulbs-bg-animated.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .intro-sec > .intro-paragraph-div {
   position: relative;
   display: inline-block;
-  height: 45%;
+  height: 100%;
 }
 .intro-sec > div > p {
   padding: 0% 3% 0 3%;
@@ -152,6 +175,10 @@ img {
   height: 100%;
   position: relative;
   width: 100%;
+  height: 100%;
+  background: url('./img/bulbs-bg-animated.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .inner-edu-sec {
@@ -185,7 +212,7 @@ img {
   width: 100%;
 }
 
-.intro-sec > .name-title-div > a {
+.home-sec > .name-title-div > a {
   display: inline-block;
   width: 100%;
   position: absolute;
@@ -222,14 +249,14 @@ img {
   padding: 25% 0 5% 0;
 }
 
-.intro-sec > div > span, .intro-sec > div > i {
+.home-sec > div > span, .home-sec > div > i {
   width: 100%;
   text-align: center;
   color: white;
   font-size: 1em;
 }
 
-.intro-sec > div >  i {
+.home-sec > div >  i {
   top: 70%;
 }
 
@@ -241,7 +268,7 @@ img {
   color: $app-link-visited;
   bottom: 5%;
 }
-.next-button-div > i, .next-button-div2 > i {
+.next-button-div > i, .next-button-div2 > i , .next-button-div-3 > i{
   font-size: 2.5em;
 }
 
@@ -259,14 +286,18 @@ img {
     font-size: 1em;
   }
   nav {
-    margin-top: 2%;
+    // margin-top: 2%;
+    // background-color: $nav-background-black-opac;
+    // box-shadow: $nav-box-shadow;
   }
   nav > ul {
     text-align: right;
+    line-height: 3em;
+    margin: 0;
   }
   nav > ul > li {
     width: auto;
-    margin: 0 5%;
+    margin: 0 2%;
   }
   nav > ul > li > a {
     font-size: 1.5em;
@@ -274,22 +305,32 @@ img {
   nav > ul > li > a:hover {
     font-size: 2em;
   }
-  .intro-sec > .name-title-div > h3 {
-    font-size: 1.5em;
+  .home-sec > .name-title-div > h3 {
+    font-size: 2.5em;
   }
-  .intro-sec > .name-title-div > h1 {
+  .home-sec > .name-title-div > h1 {
     padding: 18% 0 0 0;
-    font-size: 1.5em;
+    font-size: 2.5em;
+  }
+  .intro-sec {
+    height: 100%;
   }
   .intro-sec > div > .p-tag1 {
-    overflow: scroll;
-    font-size: 1em;
-    padding: 0 3% 0 3%;
+    // overflow: scroll;
+    // font-size: 1em;
+    // padding: 0 3% 0 3%;
+    padding: 2% 3%;
+    font-size: 1.2em;
+    height: 15%;
+    margin-top: 10%;
   }
   .intro-sec > div > .p-tag2 {
-    overflow: scroll;
-    font-size: 1em;
-    height: 44%;
+    // overflow: scroll;
+    // font-size: 1em;
+    // height: 44%;
+    padding: 2% 3%;
+    font-size: 1.2em;
+    height: 42%;
   }
   .next-button-div {
     position: absolute;
@@ -300,16 +341,16 @@ img {
     padding: 15% 0 5% 0;
     font-size: 1.5em;
     width: 100%;
-    color: black;
-    text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+    color: $edu-skills-intro-h-color;
+    // text-shadow: -5px 2px 3px rgba(7, 7, 7, 0.6);
   }
   .skills-sec > .skills-h1 {
     font-size: 2em;
     padding: 10% 0 2% 0;
     font-size: 1.5em;
     width: 100%;
-    color: black;
-    text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+    color: $edu-skills-intro-h-color;
+    // text-shadow: -5px 2px 3px rgba(7, 7, 7, 0.6);
   }
   .inner-edu-sec {
     height: 50%;
@@ -332,40 +373,51 @@ img {
 
 @media (max-width: 1024px) {
   main {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   nav {
-    margin-top: 2%;
+    // margin-top: 2%;
+    // background-color: $nav-background-black-opac;
+    // box-shadow: $nav-box-shadow;
   }
   nav > ul {
     text-align: right;
+    line-height: 3em;
+    margin: 0;
   }
   nav > ul > li {
     width: auto;
-    margin: 0 5%;
+    margin: 0 2%;
+    line-height: 3em;
   }
   nav > ul > li > a {
     font-size: 1.5em;
   }
   nav > ul > li > a:hover {
     font-size: 2em;
+    nav > ul > li {
+      margin: auto;
+    }
   }
-  .intro-sec > .name-title-div > h3 {
-    font-size: 1.5em;
+  .home-sec > .name-title-div > h3 {
+    font-size: 2em;
   }
-  .intro-sec > .name-title-div > h1 {
-    padding: 18% 0 0 0;
-    font-size: 1.5em;
+  .home-sec > .name-title-div > h1 {
+    padding: 35% 0 0 0;
+    font-size: 2em;
+  }
+  .intro-sec {
+    height: 100%;
   }
   .intro-sec > div > .p-tag1 {
-    overflow: scroll;
+    padding: 20% 10% 0 10%;
     font-size: 1em;
-    padding: 0 3% 0 3%;
+    height: 20%;
   }
   .intro-sec > div > .p-tag2 {
-    overflow: scroll;
+    padding: 10%;
     font-size: 1em;
-    height: 44%;
+    height: 45%;
   }
   .next-button-div {
     position: absolute;
@@ -376,16 +428,16 @@ img {
     padding: 15% 0 5% 0;
     font-size: 1.5em;
     width: 100%;
-    color: black;
-    text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+    color: $edu-skills-intro-h-color;
+    // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
   }
   .skills-sec > .skills-h1 {
     font-size: 2em;
     padding: 15% 0 2% 0;
     font-size: 1.5em;
     width: 100%;
-    color: black;
-    text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+    color: $edu-skills-intro-h-color;
+    // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
   }
   .inner-edu-sec {
     height: 50%;
@@ -414,10 +466,13 @@ img {
 
   nav > ul {
     text-align: right;
+    line-height: 3em;
+    margin: 0;
   }
   nav > ul > li {
     width: auto;
-    margin: 0 5%;
+    margin: 0 2%;
+    line-height: 3em;
   }
   nav > ul > li > a {
     font-size: 1.5em;
@@ -425,12 +480,15 @@ img {
   nav > ul > li > a:hover {
     font-size: 2em;
   }
-  .intro-sec > .name-title-div > h3 {
+  .home-sec > .name-title-div > h3 {
     font-size: 1.5em;
   }
-  .intro-sec > .name-title-div > h1 {
+  .home-sec > .name-title-div > h1 {
     padding: 30% 0 0 0;
     font-size: 1.5em;
+  }
+  .intro-sec {
+    height: 100%;
   }
   .intro-sec > div > .p-tag1 {
     overflow: scroll;
@@ -451,16 +509,16 @@ img {
     padding: 25% 0 10% 0;
     font-size: 1.5em;
     width: 100%;
-    color: black;
-    text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+    color: $edu-skills-intro-h-color;
+    // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
   }
   .skills-sec > .skills-h1 {
     font-size: 2em;
     padding: 20% 0 5% 0;
     font-size: 1.5em;
     width: 100%;
-    color: black;
-    text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+    color: $edu-skills-intro-h-color;
+    // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
   }
   .inner-edu-sec {
     height: 50%;
@@ -489,7 +547,8 @@ img {
   }
   nav > ul > li {
     width: auto;
-    margin: 0 5%;
+    margin: 0 2%;
+    line-height: 3em;
   }
   nav > ul > li > a {
     font-size: 1.5em;
@@ -497,12 +556,15 @@ img {
   nav > ul > li > a:hover {
     font-size: 2em;
   }
-  .intro-sec > .name-title-div > h3 {
+  .home-sec > .name-title-div > h3 {
     font-size: 1.5em;
   }
-  .intro-sec > .name-title-div > h1 {
+  .home-sec > .name-title-div > h1 {
     padding: 55% 0 1% 0;
     font-size: 1.5em;
+  }
+  .intro-sec {
+    height: 100%;
   }
   .intro-sec > div > .p-tag1 {
     overflow: scroll;
@@ -523,8 +585,8 @@ img {
     padding: 55% 0 10% 0;
     font-size: 1.5em;
     width: 100%;
-    color: black;
-    text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+    color: $edu-skills-intro-h-color;
+    // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
   }
   .inner-edu-sec {
     height: 50%;

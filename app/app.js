@@ -24,6 +24,11 @@ App.controller('MainController', ['$scope','$location','$anchorScroll','$window'
     $anchorScroll();
   }
 
+  $scope.jumpToIntro = () => {
+    $location.hash('intro');
+    $anchorScroll();
+  }
+
   $scope.jumpToEducation = () => {
     $location.hash('education');
     $anchorScroll();
@@ -33,6 +38,8 @@ App.controller('MainController', ['$scope','$location','$anchorScroll','$window'
     $location.hash('skills');
     $anchorScroll();
   }
+
+
 
   // $scope.detectOverlap = () => {
   //   $scope.dcmt = angular.element($document).find('section').children();
