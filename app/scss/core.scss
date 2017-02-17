@@ -28,6 +28,7 @@ nav {
   display: inline-block;
   width: 100%;
   z-index: 1;
+  margin-top: 5%;
 }
 
 nav > ul {
@@ -47,7 +48,7 @@ nav > ul > li {
 
 a {
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 a:link {
@@ -60,34 +61,33 @@ a:visited {
 
 a:hover {
   color: $app-h1-intro-color;
-  font-size: 2em;
+  font-size: 3em;
 }
 
-
-.intro-sec > div > h1 , .intro-sec > div > h3 {
-  // top: 45%;
-  // position: relative;
-  // margin: 0;
-  // width: 100%;
-  // color: $app-h1-intro-color;
-  // text-shadow: 8px 5px 3px $app-shadow-color;
+// .intro-sec > div > h3
+.intro-sec > div > h1  {
   position: relative;
-  padding: 16% 0 1% 0;
+  padding: 40% 0 1% 0;
   width: 100%;
   color: lightgoldenrodyellow;
   text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
 }
 
 .intro-sec > div > h3 {
+  position: relative;
+  // padding: 16% 0 1% 0;
+  width: 100%;
+  color: lightgoldenrodyellow;
+  text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
   text-align: center;
   font-style: italic;
-  // top: 55%;
-  padding: 10% 0 5% 0;
+  font-size: 4em;
+  padding: 0% 0 5% 0;
 }
 
 h1 {
   text-align: center;
-  font-size: 2em;
+  font-size: 4em;
   margin: 0 auto;
 }
 
@@ -120,7 +120,7 @@ h1 {
   // bottom: 2%;
   position: relative;
   display: inline-block;
-  height: 60%;
+  height: 45%;
 }
 .intro-sec > div > p {
   padding: 0% 3% 0 3%;
@@ -133,31 +133,20 @@ h1 {
 .intro-sec > div > .p-tag2 {
   height: 35%;
   padding-top: 3%;
+  font-size: 2em;
 }
 
 .intro-sec > div > .p-tag1 {
   padding: 3% 0% 0% 0%;
+  font-size: 2em;
 }
-// .intro-sec > div > p:last-child {
-  // margin: 5%;
-  // text-align: center;
-  // position: relative;
-  // overflow: auto;
-  // height: 150px;
-  // padding: 0% 5%;
-  // display: inline-block;
-  // height: 70%;
-  // position: relative;
-  // margin-bottom: 0;
-  // text-align: center;
-// }
 
 img {
   max-width: 100%;
 }
 
 .education-sec {
-  width: 100%;
+  width: 99%;
   border-width:5px;
   border-style:outset;
   // height: 50em;
@@ -165,12 +154,12 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-  height: 100%;
+  height: 99%;
 }
 
 .skills-sec {
   height: 100%;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 
@@ -179,14 +168,15 @@ img {
   height: 47%;
   text-align: center;
   margin: 0% auto;
-  position: relative;
+  // position: relative;
 }
 
 .edu-div {
   display: inline-block;
   position: relative;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
+  font-size: 2em;
 }
 
 .edu-p-tag {
@@ -198,10 +188,11 @@ img {
 
 .education-sec > h1 {
   position: relative;
-  padding: 10% 0 5% 0;
+  padding: 25% 0 5% 0;
 }
 .education-sec > section > div > h3{
   position: relative;
+  width: 100%;
 }
 
 .intro-sec > .name-title-div > a {
@@ -214,10 +205,10 @@ img {
 }
 
 .book-img-div {
-  width: 20%;
-  position: relative;
-  // margin: 2% 2% 2% 75%;
-  margin: 0% 2% 0% 75%;
+  width: 30%;
+  margin-right: 5%;
+  float: right;
+  margin-top: 0%;
   box-shadow:7px 7px 5px $app-shadow-color;
   // top: 30%;
 }
@@ -226,9 +217,10 @@ img {
 
 .skills-sec > ul {
   text-align: center;
-  position: relative;
+  // position: relative;
+  height: 45%;
   width: 90%;
-  padding: 0 5% 0 5%;
+  padding: 0 5%;
   list-style: none;
   display: inline-block;
 }
@@ -239,7 +231,7 @@ img {
 }
 
 .skills-sec > .skills-h1 {
-  padding: 5% 0 0 0;
+  padding: 25% 0 5% 0;
 }
 
 .intro-sec > div > span, .intro-sec > div > i {
@@ -253,184 +245,260 @@ img {
   top: 70%;
 }
 
+// .next-button-div {
+//
+// }
 .next-button-div {
   max-width: 2em;
   text-align: center;
   margin: 0 50%;
-  position: relative;
+  position: absolute;
   color: $app-link-visited;
+  bottom: 5%;
 }
-
 .next-button-div > i, .next-button-div2 > i {
   font-size: 2.5em;
 }
 
 .next-button-div2 {
-  width: 2em;
+  // width: 2em;
+  // text-align: center;
+  // margin: 0 auto;
+  // color: black;
+  // height: 3em;
+  // position: relative;
+  // top: 15%;
+  // color: $app-link-visited;
+  max-width: 2em;
   text-align: center;
-  margin: 0 auto;
-  color: black;
-  height: 3em;
-  position: relative;
-  top: 15%;
-  color: $app-link-visited;
+  margin: 0 50%;
+  position: absolute;
+  color: #6292BC;
+  bottom: 5%;
 }
 
+//
+//
+//
+// @media (min-width: 1070px) {
+//   nav > ul > li {
+//     display: inline-block;
+//     text-align: center;
+//     height: auto;
+//     width: 10%;
+//   }
+//   .intro-sec > div > h3 {
+//     text-align: center;
+//     font-style: italic;
+//     padding: 0% 0 5% 0;
+//   }
+//   .intro-sec > .intro-paragraph-div {
+//     position: absolute;
+//     height: 45%;
+//   }
+//
+//   .inner-edu-sec {
+//     width: 100%;
+//     height: 55%;
+//     text-align: center;
+//     margin: 0% auto;
+//     position: relative;
+//   }
+//
+//   .next-button-div2 {
+//     width: 2em;
+//     text-align: center;
+//     margin: 0 auto;
+//     color: black;
+//     height: 3em;
+//     position: relative;
+//     top: 0;
+//     color: $app-link-visited;
+//   }
+//   .edu-div {
+//     display: inline-block;
+//     position: relative;
+//     max-width: 40%;
+//     margin: 0 auto;
+//   }
+//   .education-sec > .inner-edu-sec > .edu-div > h3 {
+//     font-size: 4em;
+//   }
+//    .education-sec > .inner-edu-sec > .edu-div > .edu-p-tag {
+//      font-size: 2em;
+//    }
+// }
+//
+// @media (max-width: 768px) {
+//
+//   h1 {
+//     text-align: center;
+//     font-size: 2em;
+//   }
+//   // .intro-sec > div > h3 {
+//   //   position: relative;
+//   //   padding: 40% 0 1% 0;
+//   //   width: 100%;
+//   //   color: lightgoldenrodyellow;
+//   //   text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+//   // }
+//   // .intro-sec > div > h3 {
+//   //   text-align: center;
+//   //   font-style: italic;
+//   //   padding: 0% 0 5% 0;
+//   //   margin-top: 0;
+//   // }
+//   .intro-sec {
+//     height: 100%;
+//   }
+//
+//   .intro-sec > div > .p-tag2 {
+//     height: 55%;
+//     margin-bottom: 0;
+//   }
+//
+//   .skills-sec > h1 {
+//     padding: 5% 0% 0% 0%;
+//   }
+//
+//   .next-button-div {
+//     max-width: 2em;
+//     text-align: center;
+//     margin: 0 48%;
+//     position: relative;
+//     color: #6292BC;
+//     text-align: center;
+//   }
+//   .education-sec > h1 {
+//     // position: relative;
+//     padding: 15% 0 5% 0;
+//   }
+//   .next-button-div2 {
+//     width: 2em;
+//     text-align: center;
+//     margin: 0 auto;
+//     height: auto;
+//     position: relative;
+//     top: 25%;
+//     color: #6292BC;
+//   }
+//
+//   .book-img-div {
+//     width: 50%;
+//     position: relative;;
+//     margin: 0 auto;
+//     box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
+//     top: 0;
+//   }
+//
+// }
 
 
+// @media (max-width: 460px) {
+//   nav > ul {
+//     position: relative;
+//     max-width: 100%;
+//     padding: 0;
+//     list-style: none;
+//     text-align: center;
+//   }
+//
+//   h1 {
+//     text-align: center;
+//     font-size: 2em;
+//     // margin: 30% auto;
+//   }
+//   nav > ul > li {
+//     display: inline-block;
+//     text-align: center;
+//     height: auto;
+//     width: 30%;
+//     font-size: 1em;
+//   }
+//   .intro-sec > div > h1 {
+//     padding-top: 50%;
+//   }
+//   .education-sec > h1 {
+//     padding-top: 30%;
+//   }
+//   .skills-sec > .skills-h1 {
+//     padding-top: 30%;
+//   }
+//   .book-img-div {
+//     width: 65%;
+//     position: relative;;
+//     margin: 0 auto;
+//     box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
+//     top: 10%;
+//   }
+//
+//   .intro-sec {
+//     height: 100%;
+//     // position: relative;
+//   }
+//   .intro-sec > div > .p-tag2 {
+//     height: 30%;
+//     margin-bottom: 0;
+//     overflow: scroll;
+//   }
+// }
 
-@media (min-width: 1070px) {
+//
+@media (max-width: 325px) {
+  main {
+    font-size: 1em;
+  }
+
+  nav > ul {
+    text-align: center;
+  }
   nav > ul > li {
-    display: inline-block;
-    text-align: center;
-    height: auto;
-    width: 10%;
+    width: auto;
+    margin: 0 5%;
   }
-  .intro-sec > div > h3 {
-    text-align: center;
-    font-style: italic;
-    padding: 0% 0 5% 0;
+  nav > ul > li > a {
+    font-size: 1.5em;
   }
-  .intro-sec > .intro-paragraph-div {
+  nav > ul > li > a:hover {
+    font-size: 2em;
+  }
+  .intro-sec > .name-title-div > h3 {
+    font-size: 1.5em;
+  }
+  .intro-sec > .name-title-div > h1 {
+    padding: 55% 0 1% 0;
+    font-size: 1.5em;
+  }
+  .intro-sec > div > .p-tag1 {
+    overflow: scroll;
+    font-size: 1em;
+    padding: 0 3% 0 3%;
+  }
+  .intro-sec > div > .p-tag2 {
+    overflow: scroll;
+    font-size: 1em;
+    height: 44%;
+  }
+  .next-button-div {
     position: absolute;
-    height: 45%;
+    bottom: 5%;
   }
-
-  .inner-edu-sec {
+  .education-sec > h1 , .skills-sec > .skills-h1 {
+    font-size: 2em;
+    padding: 55% 0 10% 0;
+    font-size: 1.5em;
     width: 100%;
-    height: 55%;
-    text-align: center;
-    margin: 0% auto;
-    position: relative;
-  }
-
-  .next-button-div2 {
-    width: 2em;
-    text-align: center;
-    margin: 0 auto;
     color: black;
-    height: 3em;
-    position: relative;
-    top: 0;
-    color: $app-link-visited;
+    text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+  }
+  .inner-edu-sec {
+    height: 50%;
   }
   .edu-div {
     display: inline-block;
     position: relative;
-    max-width: 40%;
+    width: 80%;
     margin: 0 auto;
-  }
-}
-
-@media (max-width: 600px) {
-
-  h1 {
-    text-align: center;
-    font-size: 2em;
-  }
-  .intro-sec > div > h3 {
-    text-align: center;
-    font-style: italic;
-    padding: 0% 0 5% 0;
-  }
-  .intro-sec {
-    height: 100%;
-  }
-
-  .intro-sec > div > .p-tag2 {
-    height: 55%;
-    margin-bottom: 0;
-  }
-
-  .skills-sec > h1 {
-    padding: 5% 0% 0% 0%;
-  }
-
-  .next-button-div {
-    max-width: 2em;
-    text-align: center;
-    margin: 0 48%;
-    position: relative;
-    color: #6292BC;
-    text-align: center;
-  }
-  .education-sec > h1 {
-    position: relative;
-    padding: 15% 0 5% 0;
-  }
-  .next-button-div2 {
-    width: 2em;
-    text-align: center;
-    margin: 0 auto;
-    height: auto;
-    position: relative;
-    top: 25%;
-    color: #6292BC;
-  }
-
-  .book-img-div {
-    width: 50%;
-    position: relative;;
-    margin: 0 auto;
-    box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
-    top: 0;
-  }
-
-}
-
-
-@media (max-width: 460px) {
-  nav > ul {
-    position: relative;
-    max-width: 100%;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 2em;
-    // margin: 30% auto;
-  }
-  nav > ul > li {
-    display: inline-block;
-    text-align: center;
-    height: auto;
-    width: 30%;
     font-size: 1em;
-  }
-  .intro-sec > div > h1 {
-    padding-top: 50%;
-  }
-  .education-sec > h1 {
-    padding-top: 30%;
-  }
-  .skills-sec > .skills-h1 {
-    padding-top: 30%;
-  }
-  .book-img-div {
-    width: 65%;
-    position: relative;;
-    margin: 0 auto;
-    box-shadow: 7px 7px 5px rgba(7, 7, 7, 0.4);
-    top: 10%;
-  }
-
-  .intro-sec {
-    height: 100%;
-    // position: relative;
-  }
-  .intro-sec > div > .p-tag2 {
-    height: 30%;
-    margin-bottom: 0;
-    overflow: scroll;
-  }
-}
-
-
-@media (max-width: 320px) {
-  .intro-sec > div > p {
-    overflow: scroll;
   }
 }
