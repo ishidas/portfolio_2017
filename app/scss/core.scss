@@ -124,7 +124,7 @@ h1 {
   margin: 0 50%;
   position: absolute;
   color: $app-link-visited;
-  bottom: 5%;
+  bottom: 1%;
 }
 .intro-sec {
   height: 100%;
@@ -266,10 +266,10 @@ img {
   margin: 0 50%;
   position: absolute;
   color: $app-link-visited;
-  bottom: 5%;
+  bottom: 1%;
 }
 .next-button-div > i, .next-button-div2 > i , .next-button-div-3 > i{
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 .next-button-div2 {
@@ -278,7 +278,7 @@ img {
   margin: 0 50%;
   position: absolute;
   color: #6292BC;
-  bottom: 5%;
+  bottom: 1%;
 }
 
 @media (min-width: 1025px) {
@@ -322,7 +322,7 @@ img {
     padding: 2% 3%;
     font-size: 1.2em;
     height: 15%;
-    margin-top: 10%;
+    margin-top: 0%;
   }
   .intro-sec > div > .p-tag2 {
     // overflow: scroll;
@@ -334,9 +334,9 @@ img {
   }
   .next-button-div {
     position: absolute;
-    bottom: 5%;
+    bottom: 1%;
   }
-  .education-sec > h1 , .skills-sec > .skills-h1 {
+  .education-sec > h1 , .skills-sec > .skills-h1, .intro-sec > .intro-paragraph-div > .introp-h1 {
     font-size: 2em;
     padding: 15% 0 5% 0;
     font-size: 1.5em;
@@ -410,7 +410,7 @@ img {
     height: 100%;
   }
   .intro-sec > div > .p-tag1 {
-    padding: 20% 10% 0 10%;
+    padding: 0% 10% 0 10%;
     font-size: 1em;
     height: 20%;
   }
@@ -421,9 +421,9 @@ img {
   }
   .next-button-div {
     position: absolute;
-    bottom: 5%;
+    bottom: 1%;
   }
-  .education-sec > h1 , .skills-sec > .skills-h1 {
+  .education-sec > h1 , .skills-sec > .skills-h1,.intro-sec > .intro-paragraph-div > .introp-h1  {
     font-size: 2em;
     padding: 15% 0 5% 0;
     font-size: 1.5em;
@@ -491,9 +491,12 @@ img {
     height: 100%;
   }
   .intro-sec > div > .p-tag1 {
-    overflow: scroll;
+    // overflow: scroll;
+    // font-size: 1em;
+    // padding: 0 3% 0 3%;
+    padding: 0% 10% 0 10%;
     font-size: 1em;
-    padding: 0 3% 0 3%;
+    height: 20%;
   }
   .intro-sec > div > .p-tag2 {
     overflow: scroll;
@@ -502,9 +505,9 @@ img {
   }
   .next-button-div {
     position: absolute;
-    bottom: 5%;
+    bottom: 1%;
   }
-  .education-sec > h1 , .skills-sec > .skills-h1 {
+  .education-sec > h1 , .skills-sec > .skills-h1, .intro-sec > .intro-paragraph-div > .introp-h1  {
     font-size: 2em;
     padding: 25% 0 10% 0;
     font-size: 1.5em;
@@ -578,7 +581,7 @@ img {
   }
   .next-button-div {
     position: absolute;
-    bottom: 5%;
+    bottom: 1%;
   }
   .education-sec > h1 , .skills-sec > .skills-h1 {
     font-size: 2em;
