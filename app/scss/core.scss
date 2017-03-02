@@ -1,7 +1,7 @@
 @import "./animation.scss";
 $app-font-color: #333333;
 $app-background-color: white;
-$main-font: fantasy;
+$main-font: fantasy, sans-serif;
 // 'Alice', serif
 $box-background-color: rgba(250,250,255,0.3);
 $app-shadow-color: rgba(7,7,7,0.4);
@@ -199,7 +199,7 @@ img {
 .edu-p-tag {
   position: relative;
   font-size: 1em;
-  height: 5em;
+  height: 10%;
   padding: 0 5%;
 }
 
@@ -242,7 +242,7 @@ img {
 
 .skills-sec > ul > li {
   display: inline-block;
-  margin: 5%;
+  margin: 2% 5%;
 }
 
 .skills-sec > .skills-h1 {
@@ -321,7 +321,7 @@ img {
     // padding: 0 3% 0 3%;
     padding: 2% 3%;
     font-size: 1.2em;
-    height: 15%;
+    height: 10%;
     margin-top: 0%;
   }
   .intro-sec > div > .p-tag2 {
@@ -338,7 +338,7 @@ img {
   }
   .education-sec > h1 , .skills-sec > .skills-h1, .intro-sec > .intro-paragraph-div > .introp-h1 {
     font-size: 2em;
-    padding: 15% 0 5% 0;
+    padding: 10% 0 5% 0;
     font-size: 1.5em;
     width: 100%;
     color: $edu-skills-intro-h-color;
@@ -415,7 +415,7 @@ img {
     height: 20%;
   }
   .intro-sec > div > .p-tag2 {
-    padding: 10%;
+    padding: 0% 5%;
     font-size: 1em;
     height: 45%;
   }
@@ -501,7 +501,7 @@ img {
   .intro-sec > div > .p-tag2 {
     overflow: scroll;
     font-size: 1em;
-    height: 44%;
+    height: 34%;
   }
   .next-button-div {
     position: absolute;
@@ -509,7 +509,7 @@ img {
   }
   .education-sec > h1 , .skills-sec > .skills-h1, .intro-sec > .intro-paragraph-div > .introp-h1  {
     font-size: 2em;
-    padding: 25% 0 10% 0;
+    padding: 20% 0 5% 0;
     font-size: 1.5em;
     width: 100%;
     color: $edu-skills-intro-h-color;
@@ -585,7 +585,7 @@ img {
   }
   .education-sec > h1 , .skills-sec > .skills-h1 {
     font-size: 2em;
-    padding: 55% 0 10% 0;
+    padding: 30% 0 10% 0;
     font-size: 1.5em;
     width: 100%;
     color: $edu-skills-intro-h-color;
