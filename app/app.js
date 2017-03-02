@@ -5,7 +5,7 @@ import ngRoute from 'angular-route';
 require('!style-loader!css-loader!sass-loader!./scss/core.scss');
 
 const bgimgUrl = require('./scss/img/mfnbfaciu1i-patrick-schneider.png');
-const bookImgUrl = require('./scss/img/books.jpg');
+const bookImgUrl = require('./scss/img/books.png');
 const bulbsGif = require('./scss/img/bulbs-bg-animated.gif');
 const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($locationProvider) => {
   $locationProvider.html5Mode({

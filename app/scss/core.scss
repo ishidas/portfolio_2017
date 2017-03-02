@@ -1,604 +1,622 @@
-@import "./animation.scss";
-$app-font-color: #333333;
-$app-background-color: white;
-$main-font: fantasy, sans-serif;
-// 'Alice', serif
-$box-background-color: rgba(250,250,255,0.3);
-$app-shadow-color: rgba(7,7,7,0.4);
-$app-h1-intro-color: lightgoldenrodyellow;
-$app-link-hover: #6292BC;
-$app-link-visited: darkseagreen;
-$text-shadow-black: -5px 2px 3px rgba(7, 7, 7, 0.6);
-$nav-background-black-opac: rgba(0, 0, 0, 0.65);
-$nav-box-shadow: 7px 7px 5px $app-shadow-color;
-$edu-skills-intro-h-color: darksalmon;
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color: $app-background-color;
-  color: $app-font-color;
-  font-family: $main-font;
-}
-
-main {
-  height: 100%;
-  width: 100%;
-}
+@import "./layout.scss";
 
 nav {
   position: fixed;
-  height: auto;
-  display: inline-block;
-  width: 100%;
-  z-index: 1;
-  // background-color: $nav-background-black-opac;
-  // box-shadow: $nav-box-shadow;
+  height: 100vh;
+  // padding: 0;
 }
 
-nav > ul {
+.home-sec, .intro-sec, .skills-sec, .education-sec {
+  height: 100vh;
+
+  // padding: 0;
   position: relative;
-  max-width: 100%;
-  padding: 0;
-  list-style: none;
-  text-align: right;
-  margin: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-  text-align: center;
-  height: auto;
-  width: 20%;
-}
-
-a {
-  text-decoration: none;
-  font-size: 2em;
-}
-
-a:link {
-  color: $app-font-color;
-}
-
-a:visited {
-  color: $app-link-visited;
-}
-
-a:hover {
-  color: $app-link-hover;
-  font-size: 3em;
-}
-
-.home-sec > div > h1  {
-  position: relative;
-  padding: 40% 0 1% 0;
-  width: 100%;
-  color: lightgoldenrodyellow;
-  text-shadow: $text-shadow-black;
-}
-
-.home-sec > div > h3 {
-  position: relative;
-  width: 100%;
-  color: lightgoldenrodyellow;
-  text-shadow: $text-shadow-black;
-  text-align: center;
-  font-style: italic;
-  font-size: 4em;
-  padding: 0% 0 5% 0;
-}
-
-h1 {
-  text-align: center;
-  font-size: 4em;
-  margin: 0 auto;
-}
-
-
-.home-sec {
-  height: 100%;
-}
-
-.home-sec > .intro-img-div {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 0;
-}
-
-.home-sec > .name-title-div {
-    background: url("img/mfnbfaciu1i-patrick-schneider.png") no-repeat center center fixed;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.home-sec > .name-title-div > .next-button-div-3 {
-  max-width: 2em;
-  text-align: center;
-  margin: 0 50%;
-  position: absolute;
-  color: $app-link-visited;
-  bottom: 1%;
-}
-.intro-sec {
-  height: 100%;
-  background: url('./img/bulbs-bg-animated.gif');
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.intro-sec > .intro-paragraph-div {
-  position: relative;
-  display: inline-block;
-  height: 100%;
-}
-.intro-sec > div > p {
-  padding: 0% 3% 0 3%;
-  text-align: center;
-  position: relative;
-}
-
-.intro-sec > div > .p-tag2 {
-  height: 35%;
-  padding-top: 3%;
-  font-size: 2em;
-}
-
-.intro-sec > div > .p-tag1 {
-  padding: 3% 0% 0% 0%;
-  font-size: 2em;
-}
-
-img {
-  max-width: 100%;
-}
-
-.education-sec {
-  width: 99%;
-  border-width:5px;
-  border-style:outset;
-  background: url('./img/bulbs-bg-animated.gif');
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 99%;
-}
-
-.skills-sec {
-  height: 100%;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url('./img/bulbs-bg-animated.gif');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.inner-edu-sec {
-  width: 100%;
-  height: 47%;
-  text-align: center;
-  margin: 0% auto;
-}
-
-.edu-div {
-  display: inline-block;
-  position: relative;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 2em;
-}
-
-.edu-p-tag {
-  position: relative;
-  font-size: 1em;
-  height: 10%;
-  padding: 0 5%;
-}
-
-.education-sec > h1 {
-  position: relative;
-  padding: 25% 0 5% 0;
-}
-.education-sec > section > div > h3{
-  position: relative;
-  width: 100%;
-}
-
-.home-sec > .name-title-div > a {
-  display: inline-block;
-  width: 100%;
-  position: absolute;
-  height: auto;
-  margin: 0 auto;
-  bottom: 0%;
-}
-
-.book-img-div {
-  width: 30%;
-  margin-right: 5%;
-  float: right;
-  margin-top: 0%;
-  box-shadow:7px 7px 5px $app-shadow-color;
+  left: 8.33%;
 }
 
 
 
-.skills-sec > ul {
-  text-align: center;
-  height: 45%;
-  width: 90%;
-  padding: 0 5%;
-  list-style: none;
-  display: inline-block;
-}
-
-.skills-sec > ul > li {
-  display: inline-block;
-  margin: 2% 5%;
-}
-
-.skills-sec > .skills-h1 {
-  padding: 25% 0 5% 0;
-}
-
-.home-sec > div > span, .home-sec > div > i {
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 1em;
-}
-
-.home-sec > div >  i {
-  top: 70%;
-}
-
-.next-button-div {
-  max-width: 2em;
-  text-align: center;
-  margin: 0 50%;
-  position: absolute;
-  color: $app-link-visited;
-  bottom: 1%;
-}
-.next-button-div > i, .next-button-div2 > i , .next-button-div-3 > i{
-  font-size: 3em;
-}
-
-.next-button-div2 {
-  max-width: 2em;
-  text-align: center;
-  margin: 0 50%;
-  position: absolute;
-  color: #6292BC;
-  bottom: 1%;
-}
-
-@media (min-width: 1025px) {
-  main {
-    font-size: 1em;
-  }
-  nav {
-    // margin-top: 2%;
-    // background-color: $nav-background-black-opac;
-    // box-shadow: $nav-box-shadow;
-  }
-  nav > ul {
-    text-align: right;
-    line-height: 3em;
-    margin: 0;
-  }
-  nav > ul > li {
-    width: auto;
-    margin: 0 2%;
-  }
-  nav > ul > li > a {
-    font-size: 1.5em;
-  }
-  nav > ul > li > a:hover {
-    font-size: 2em;
-  }
-  .home-sec > .name-title-div > h3 {
-    font-size: 2.5em;
-  }
-  .home-sec > .name-title-div > h1 {
-    padding: 18% 0 0 0;
-    font-size: 2.5em;
-  }
-  .intro-sec {
-    height: 100%;
-  }
-  .intro-sec > div > .p-tag1 {
-    // overflow: scroll;
-    // font-size: 1em;
-    // padding: 0 3% 0 3%;
-    padding: 2% 3%;
-    font-size: 1.2em;
-    height: 10%;
-    margin-top: 0%;
-  }
-  .intro-sec > div > .p-tag2 {
-    // overflow: scroll;
-    // font-size: 1em;
-    // height: 44%;
-    padding: 2% 3%;
-    font-size: 1.2em;
-    height: 42%;
-  }
-  .next-button-div {
-    position: absolute;
-    bottom: 1%;
-  }
-  .education-sec > h1 , .skills-sec > .skills-h1, .intro-sec > .intro-paragraph-div > .introp-h1 {
-    font-size: 2em;
-    padding: 10% 0 5% 0;
-    font-size: 1.5em;
-    width: 100%;
-    color: $edu-skills-intro-h-color;
-    // text-shadow: -5px 2px 3px rgba(7, 7, 7, 0.6);
-  }
-  .skills-sec > .skills-h1 {
-    font-size: 2em;
-    padding: 10% 0 2% 0;
-    font-size: 1.5em;
-    width: 100%;
-    color: $edu-skills-intro-h-color;
-    // text-shadow: -5px 2px 3px rgba(7, 7, 7, 0.6);
-  }
-  .inner-edu-sec {
-    height: 50%;
-  }
-  .edu-div {
-    display: inline-block;
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1em;
-  }
-  .skills-sec > ul {
-    height: 30%
-  }
-  .book-img-div {
-    width: 15%;
-  }
-}
-
-
-@media (max-width: 1024px) {
-  main {
-    font-size: 1.2em;
-  }
-  nav {
-    // margin-top: 2%;
-    // background-color: $nav-background-black-opac;
-    // box-shadow: $nav-box-shadow;
-  }
-  nav > ul {
-    text-align: right;
-    line-height: 3em;
-    margin: 0;
-  }
-  nav > ul > li {
-    width: auto;
-    margin: 0 2%;
-    line-height: 3em;
-  }
-  nav > ul > li > a {
-    font-size: 1.5em;
-  }
-  nav > ul > li > a:hover {
-    font-size: 2em;
-    nav > ul > li {
-      margin: auto;
-    }
-  }
-  .home-sec > .name-title-div > h3 {
-    font-size: 2em;
-  }
-  .home-sec > .name-title-div > h1 {
-    padding: 35% 0 0 0;
-    font-size: 2em;
-  }
-  .intro-sec {
-    height: 100%;
-  }
-  .intro-sec > div > .p-tag1 {
-    padding: 0% 10% 0 10%;
-    font-size: 1em;
-    height: 20%;
-  }
-  .intro-sec > div > .p-tag2 {
-    padding: 0% 5%;
-    font-size: 1em;
-    height: 45%;
-  }
-  .next-button-div {
-    position: absolute;
-    bottom: 1%;
-  }
-  .education-sec > h1 , .skills-sec > .skills-h1,.intro-sec > .intro-paragraph-div > .introp-h1  {
-    font-size: 2em;
-    padding: 15% 0 5% 0;
-    font-size: 1.5em;
-    width: 100%;
-    color: $edu-skills-intro-h-color;
-    // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
-  }
-  .skills-sec > .skills-h1 {
-    font-size: 2em;
-    padding: 15% 0 2% 0;
-    font-size: 1.5em;
-    width: 100%;
-    color: $edu-skills-intro-h-color;
-    // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
-  }
-  .inner-edu-sec {
-    height: 50%;
-  }
-  .edu-div {
-    display: inline-block;
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1em;
-  }
-  .skills-sec > ul {
-    height: 30%
-  }
-  .book-img-div {
-    width: 20%;
-  }
-}
-
-
-
-@media (max-width: 768px) {
-  main {
-    font-size: 1em;
-  }
-
-  nav > ul {
-    text-align: right;
-    line-height: 3em;
-    margin: 0;
-  }
-  nav > ul > li {
-    width: auto;
-    margin: 0 2%;
-    line-height: 3em;
-  }
-  nav > ul > li > a {
-    font-size: 1.5em;
-  }
-  nav > ul > li > a:hover {
-    font-size: 2em;
-  }
-  .home-sec > .name-title-div > h3 {
-    font-size: 1.5em;
-  }
-  .home-sec > .name-title-div > h1 {
-    padding: 30% 0 0 0;
-    font-size: 1.5em;
-  }
-  .intro-sec {
-    height: 100%;
-  }
-  .intro-sec > div > .p-tag1 {
-    // overflow: scroll;
-    // font-size: 1em;
-    // padding: 0 3% 0 3%;
-    padding: 0% 10% 0 10%;
-    font-size: 1em;
-    height: 20%;
-  }
-  .intro-sec > div > .p-tag2 {
-    overflow: scroll;
-    font-size: 1em;
-    height: 34%;
-  }
-  .next-button-div {
-    position: absolute;
-    bottom: 1%;
-  }
-  .education-sec > h1 , .skills-sec > .skills-h1, .intro-sec > .intro-paragraph-div > .introp-h1  {
-    font-size: 2em;
-    padding: 20% 0 5% 0;
-    font-size: 1.5em;
-    width: 100%;
-    color: $edu-skills-intro-h-color;
-    // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
-  }
-  .skills-sec > .skills-h1 {
-    font-size: 2em;
-    padding: 20% 0 5% 0;
-    font-size: 1.5em;
-    width: 100%;
-    color: $edu-skills-intro-h-color;
-    // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
-  }
-  .inner-edu-sec {
-    height: 50%;
-  }
-  .edu-div {
-    display: inline-block;
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1em;
-  }
-  .skills-sec > ul {
-    height: 30%
-  }
-
-}
-
-
-@media (max-width: 325px) {
-  main {
-    font-size: 1em;
-  }
-
-  nav > ul {
-    text-align: center;
-  }
-  nav > ul > li {
-    width: auto;
-    margin: 0 2%;
-    line-height: 3em;
-  }
-  nav > ul > li > a {
-    font-size: 1.5em;
-  }
-  nav > ul > li > a:hover {
-    font-size: 2em;
-  }
-  .home-sec > .name-title-div > h3 {
-    font-size: 1.5em;
-  }
-  .home-sec > .name-title-div > h1 {
-    padding: 55% 0 1% 0;
-    font-size: 1.5em;
-  }
-  .intro-sec {
-    height: 100%;
-  }
-  .intro-sec > div > .p-tag1 {
-    overflow: scroll;
-    font-size: 1em;
-    padding: 0 3% 0 3%;
-  }
-  .intro-sec > div > .p-tag2 {
-    overflow: scroll;
-    font-size: 1em;
-    height: 44%;
-  }
-  .next-button-div {
-    position: absolute;
-    bottom: 1%;
-  }
-  .education-sec > h1 , .skills-sec > .skills-h1 {
-    font-size: 2em;
-    padding: 30% 0 10% 0;
-    font-size: 1.5em;
-    width: 100%;
-    color: $edu-skills-intro-h-color;
-    // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
-  }
-  .inner-edu-sec {
-    height: 50%;
-  }
-  .edu-div {
-    display: inline-block;
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1em;
-  }
-}
+// ********************************
+// $app-font-color: #333333;
+// $app-background-color: white;
+// $main-font: fantasy, sans-serif;
+// // 'Alice', serif
+// $box-background-color: rgba(250,250,255,0.3);
+// $app-shadow-color: rgba(7,7,7,0.4);
+// $app-h1-intro-color: lightgoldenrodyellow;
+// $app-link-hover: #6292BC;
+// $app-link-visited: darkseagreen;
+// $text-shadow-black: -5px 2px 3px rgba(7, 7, 7, 0.6);
+// $nav-background-black-opac: rgba(0, 0, 0, 0.65);
+// $nav-box-shadow: 7px 7px 5px $app-shadow-color;
+// $edu-skills-intro-h-color: darksalmon;
+// html, body {
+//   width: 100%;
+//   height: 100%;
+//   margin: 0;
+//   background-color: $app-background-color;
+//   color: $app-font-color;
+//   font-family: $main-font;
+// }
+//
+// main {
+//   height: 100%;
+//   width: 100%;
+// }
+//
+// nav {
+//   position: fixed;
+//   height: auto;
+//   display: inline-block;
+//   width: 100%;
+//   z-index: 1;
+//   // background-color: $nav-background-black-opac;
+//   // box-shadow: $nav-box-shadow;
+// }
+//
+// nav > ul {
+//   position: relative;
+//   max-width: 100%;
+//   padding: 0;
+//   list-style: none;
+//   text-align: right;
+//   margin: 0;
+// }
+//
+// nav > ul > li {
+//   display: inline-block;
+//   text-align: center;
+//   height: auto;
+//   width: 20%;
+// }
+//
+// a {
+//   text-decoration: none;
+//   font-size: 2em;
+// }
+//
+// a:link {
+//   color: $app-font-color;
+// }
+//
+// a:visited {
+//   color: $app-link-visited;
+// }
+//
+// a:hover {
+//   color: $app-link-hover;
+//   font-size: 3em;
+// }
+//
+// .home-sec > div > h1  {
+//   position: relative;
+//   padding: 40% 0 1% 0;
+//   width: 100%;
+//   color: lightgoldenrodyellow;
+//   text-shadow: $text-shadow-black;
+// }
+//
+// .home-sec > div > h3 {
+//   position: relative;
+//   width: 100%;
+//   color: lightgoldenrodyellow;
+//   text-shadow: $text-shadow-black;
+//   text-align: center;
+//   font-style: italic;
+//   font-size: 4em;
+//   padding: 0% 0 5% 0;
+// }
+//
+// h1 {
+//   text-align: center;
+//   font-size: 4em;
+//   margin: 0 auto;
+// }
+//
+//
+// .home-sec {
+//   height: 100%;
+// }
+//
+// .home-sec > .intro-img-div {
+//   position: absolute;
+//   width: 100%;
+//   height: auto;
+//   top: 0;
+// }
+//
+// .home-sec > .name-title-div {
+//     background: url("img/mfnbfaciu1i-patrick-schneider.png") no-repeat center center fixed;
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+// }
+//
+// .home-sec > .name-title-div > .next-button-div-3 {
+//   max-width: 2em;
+//   text-align: center;
+//   margin: 0 50%;
+//   position: absolute;
+//   color: $app-link-visited;
+//   bottom: 1%;
+// }
+// .intro-sec {
+//   height: 100%;
+//   background: url('./img/bulbs-bg-animated.gif');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   position: relative;
+// }
+//
+// .intro-sec > .intro-paragraph-div {
+//   position: relative;
+//   display: inline-block;
+//   height: 100%;
+// }
+// .intro-sec > div > p {
+//   padding: 0% 3% 0 3%;
+//   text-align: center;
+//   position: relative;
+// }
+//
+// .intro-sec > div > .p-tag2 {
+//   height: 35%;
+//   padding-top: 3%;
+//   font-size: 2em;
+// }
+//
+// .intro-sec > div > .p-tag1 {
+//   padding: 3% 0% 0% 0%;
+//   font-size: 2em;
+// }
+//
+// img {
+//   max-width: 100%;
+// }
+//
+// .education-sec {
+//   width: 99%;
+//   border-width:5px;
+//   border-style:outset;
+//   background: url('./img/bulbs-bg-animated.gif');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   position: relative;
+//   height: 99%;
+// }
+//
+// .skills-sec {
+//   height: 100%;
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   background: url('./img/bulbs-bg-animated.gif');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
+//
+// .inner-edu-sec {
+//   width: 100%;
+//   height: 47%;
+//   text-align: center;
+//   margin: 0% auto;
+// }
+//
+// .edu-div {
+//   display: inline-block;
+//   position: relative;
+//   width: 80%;
+//   margin: 0 auto;
+//   font-size: 2em;
+// }
+//
+// .edu-p-tag {
+//   position: relative;
+//   font-size: 1em;
+//   height: 10%;
+//   padding: 0 5%;
+// }
+//
+// .education-sec > h1 {
+//   position: relative;
+//   padding: 25% 0 5% 0;
+// }
+// .education-sec > section > div > h3{
+//   position: relative;
+//   width: 100%;
+// }
+//
+// .home-sec > .name-title-div > a {
+//   display: inline-block;
+//   width: 100%;
+//   position: absolute;
+//   height: auto;
+//   margin: 0 auto;
+//   bottom: 0%;
+// }
+//
+// .book-img-div {
+//   width: 30%;
+//   margin-right: 5%;
+//   float: right;
+//   margin-top: 0%;
+//   box-shadow:7px 7px 5px $app-shadow-color;
+// }
+//
+//
+//
+// .skills-sec > ul {
+//   text-align: center;
+//   height: 45%;
+//   width: 90%;
+//   padding: 0 5%;
+//   list-style: none;
+//   display: inline-block;
+// }
+//
+// .skills-sec > ul > li {
+//   display: inline-block;
+//   margin: 2% 5%;
+// }
+//
+// .skills-sec > .skills-h1 {
+//   padding: 25% 0 5% 0;
+// }
+//
+// .home-sec > div > span, .home-sec > div > i {
+//   width: 100%;
+//   text-align: center;
+//   color: white;
+//   font-size: 1em;
+// }
+//
+// .home-sec > div >  i {
+//   top: 70%;
+// }
+//
+// .next-button-div {
+//   max-width: 2em;
+//   text-align: center;
+//   margin: 0 50%;
+//   position: absolute;
+//   color: $app-link-visited;
+//   bottom: 1%;
+// }
+// .next-button-div > i, .next-button-div2 > i , .next-button-div-3 > i{
+//   font-size: 3em;
+// }
+//
+// .next-button-div2 {
+//   max-width: 2em;
+//   text-align: center;
+//   margin: 0 50%;
+//   position: absolute;
+//   color: #6292BC;
+//   bottom: 1%;
+// }
+//
+// @media (min-width: 1025px) {
+//   main {
+//     font-size: 1em;
+//   }
+//   nav {
+//     // margin-top: 2%;
+//     // background-color: $nav-background-black-opac;
+//     // box-shadow: $nav-box-shadow;
+//   }
+//   nav > ul {
+//     text-align: right;
+//     line-height: 3em;
+//     margin: 0;
+//   }
+//   nav > ul > li {
+//     width: auto;
+//     margin: 0 2%;
+//   }
+//   nav > ul > li > a {
+//     font-size: 1.5em;
+//   }
+//   nav > ul > li > a:hover {
+//     font-size: 2em;
+//   }
+//   .home-sec > .name-title-div > h3 {
+//     font-size: 2.5em;
+//   }
+//   .home-sec > .name-title-div > h1 {
+//     padding: 18% 0 0 0;
+//     font-size: 2.5em;
+//   }
+//   .intro-sec {
+//     height: 100%;
+//   }
+//   .intro-sec > div > .p-tag1 {
+//     // overflow: scroll;
+//     // font-size: 1em;
+//     // padding: 0 3% 0 3%;
+//     padding: 2% 3%;
+//     font-size: 1.2em;
+//     height: 10%;
+//     margin-top: 0%;
+//   }
+//   .intro-sec > div > .p-tag2 {
+//     // overflow: scroll;
+//     // font-size: 1em;
+//     // height: 44%;
+//     padding: 2% 3%;
+//     font-size: 1.2em;
+//     height: 42%;
+//   }
+//   .next-button-div {
+//     position: absolute;
+//     bottom: 1%;
+//   }
+//   .education-sec > h1 , .skills-sec > .skills-h1, .intro-sec > .intro-paragraph-div > .introp-h1 {
+//     font-size: 2em;
+//     padding: 10% 0 5% 0;
+//     font-size: 1.5em;
+//     width: 100%;
+//     color: $edu-skills-intro-h-color;
+//     // text-shadow: -5px 2px 3px rgba(7, 7, 7, 0.6);
+//   }
+//   .skills-sec > .skills-h1 {
+//     font-size: 2em;
+//     padding: 10% 0 2% 0;
+//     font-size: 1.5em;
+//     width: 100%;
+//     color: $edu-skills-intro-h-color;
+//     // text-shadow: -5px 2px 3px rgba(7, 7, 7, 0.6);
+//   }
+//   .inner-edu-sec {
+//     height: 50%;
+//   }
+//   .edu-div {
+//     display: inline-block;
+//     position: relative;
+//     width: 80%;
+//     margin: 0 auto;
+//     font-size: 1em;
+//   }
+//   .skills-sec > ul {
+//     height: 30%
+//   }
+//   .book-img-div {
+//     width: 15%;
+//   }
+// }
+//
+//
+// @media (max-width: 1024px) {
+//   main {
+//     font-size: 1.2em;
+//   }
+//   nav {
+//     // margin-top: 2%;
+//     // background-color: $nav-background-black-opac;
+//     // box-shadow: $nav-box-shadow;
+//   }
+//   nav > ul {
+//     text-align: right;
+//     line-height: 3em;
+//     margin: 0;
+//   }
+//   nav > ul > li {
+//     width: auto;
+//     margin: 0 2%;
+//     line-height: 3em;
+//   }
+//   nav > ul > li > a {
+//     font-size: 1.5em;
+//   }
+//   nav > ul > li > a:hover {
+//     font-size: 2em;
+//     nav > ul > li {
+//       margin: auto;
+//     }
+//   }
+//   .home-sec > .name-title-div > h3 {
+//     font-size: 2em;
+//   }
+//   .home-sec > .name-title-div > h1 {
+//     padding: 35% 0 0 0;
+//     font-size: 2em;
+//   }
+//   .intro-sec {
+//     height: 100%;
+//   }
+//   .intro-sec > div > .p-tag1 {
+//     padding: 0% 10% 0 10%;
+//     font-size: 1em;
+//     height: 20%;
+//   }
+//   .intro-sec > div > .p-tag2 {
+//     padding: 0% 5%;
+//     font-size: 1em;
+//     height: 45%;
+//   }
+//   .next-button-div {
+//     position: absolute;
+//     bottom: 1%;
+//   }
+//   .education-sec > h1 , .skills-sec > .skills-h1,.intro-sec > .intro-paragraph-div > .introp-h1  {
+//     font-size: 2em;
+//     padding: 15% 0 5% 0;
+//     font-size: 1.5em;
+//     width: 100%;
+//     color: $edu-skills-intro-h-color;
+//     // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+//   }
+//   .skills-sec > .skills-h1 {
+//     font-size: 2em;
+//     padding: 15% 0 2% 0;
+//     font-size: 1.5em;
+//     width: 100%;
+//     color: $edu-skills-intro-h-color;
+//     // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+//   }
+//   .inner-edu-sec {
+//     height: 50%;
+//   }
+//   .edu-div {
+//     display: inline-block;
+//     position: relative;
+//     width: 80%;
+//     margin: 0 auto;
+//     font-size: 1em;
+//   }
+//   .skills-sec > ul {
+//     height: 30%
+//   }
+//   .book-img-div {
+//     width: 20%;
+//   }
+// }
+//
+//
+//
+// @media (max-width: 768px) {
+//   main {
+//     font-size: 1em;
+//   }
+//
+//   nav > ul {
+//     text-align: right;
+//     line-height: 3em;
+//     margin: 0;
+//   }
+//   nav > ul > li {
+//     width: auto;
+//     margin: 0 2%;
+//     line-height: 3em;
+//   }
+//   nav > ul > li > a {
+//     font-size: 1.5em;
+//   }
+//   nav > ul > li > a:hover {
+//     font-size: 2em;
+//   }
+//   .home-sec > .name-title-div > h3 {
+//     font-size: 1.5em;
+//   }
+//   .home-sec > .name-title-div > h1 {
+//     padding: 30% 0 0 0;
+//     font-size: 1.5em;
+//   }
+//   .intro-sec {
+//     height: 100%;
+//   }
+//   .intro-sec > div > .p-tag1 {
+//     // overflow: scroll;
+//     // font-size: 1em;
+//     // padding: 0 3% 0 3%;
+//     padding: 0% 10% 0 10%;
+//     font-size: 1em;
+//     height: 20%;
+//   }
+//   .intro-sec > div > .p-tag2 {
+//     overflow: scroll;
+//     font-size: 1em;
+//     height: 34%;
+//   }
+//   .next-button-div {
+//     position: absolute;
+//     bottom: 1%;
+//   }
+//   .education-sec > h1 , .skills-sec > .skills-h1, .intro-sec > .intro-paragraph-div > .introp-h1  {
+//     font-size: 2em;
+//     padding: 20% 0 5% 0;
+//     font-size: 1.5em;
+//     width: 100%;
+//     color: $edu-skills-intro-h-color;
+//     // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+//   }
+//   .skills-sec > .skills-h1 {
+//     font-size: 2em;
+//     padding: 20% 0 5% 0;
+//     font-size: 1.5em;
+//     width: 100%;
+//     color: $edu-skills-intro-h-color;
+//     // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+//   }
+//   .inner-edu-sec {
+//     height: 50%;
+//   }
+//   .edu-div {
+//     display: inline-block;
+//     position: relative;
+//     width: 80%;
+//     margin: 0 auto;
+//     font-size: 1em;
+//   }
+//   .skills-sec > ul {
+//     height: 30%
+//   }
+//
+// }
+//
+//
+// @media (max-width: 325px) {
+//   main {
+//     font-size: 1em;
+//   }
+//
+//   nav > ul {
+//     text-align: center;
+//   }
+//   nav > ul > li {
+//     width: auto;
+//     margin: 0 2%;
+//     line-height: 3em;
+//   }
+//   nav > ul > li > a {
+//     font-size: 1.5em;
+//   }
+//   nav > ul > li > a:hover {
+//     font-size: 2em;
+//   }
+//   .home-sec > .name-title-div > h3 {
+//     font-size: 1.5em;
+//   }
+//   .home-sec > .name-title-div > h1 {
+//     padding: 55% 0 1% 0;
+//     font-size: 1.5em;
+//   }
+//   .intro-sec {
+//     height: 100%;
+//   }
+//   .intro-sec > div > .p-tag1 {
+//     overflow: scroll;
+//     font-size: 1em;
+//     padding: 0 3% 0 3%;
+//   }
+//   .intro-sec > div > .p-tag2 {
+//     overflow: scroll;
+//     font-size: 1em;
+//     height: 44%;
+//   }
+//   .next-button-div {
+//     position: absolute;
+//     bottom: 1%;
+//   }
+//   .education-sec > h1 , .skills-sec > .skills-h1 {
+//     font-size: 2em;
+//     padding: 30% 0 10% 0;
+//     font-size: 1.5em;
+//     width: 100%;
+//     color: $edu-skills-intro-h-color;
+//     // text-shadow: 8px 5px 3px rgba(7, 7, 7, 0.4);
+//   }
+//   .inner-edu-sec {
+//     height: 50%;
+//   }
+//   .edu-div {
+//     display: inline-block;
+//     position: relative;
+//     width: 80%;
+//     margin: 0 auto;
+//     font-size: 1em;
+//   }
+// }
