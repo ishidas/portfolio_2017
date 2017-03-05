@@ -5,6 +5,23 @@ $color-nav-home: darksalmon;
 $color-nav-intro: lightgoldenrodyellow;
 $app-link-hover: #6292BC;
 $app-link-visited: darkseagreen;
+$font-family-google: 'Arvo', serif;
+$font-family-google2:'Josefin Slab', serif;
+$font-family-google3:'Didact Gothic', sans-serif;
+$font-family-google4:'Raleway', sans-serif;
+$sakura-home: #693260;
+$sakura-intro: #a25a93;
+$sakura-edu: #986a81;
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: $font-family-google2;
+}
+
 nav {
   position: fixed;
   height: 100%;
@@ -59,8 +76,54 @@ nav > ul > a {
 
 .home-sec {
   background: url("img/rsz_adrian-benea-hawaii.png") no-repeat center center;
+  background-size: cover;
+}
+.intro-sec {
+  background: url("img/yuki-yoshida-resized.png") no-repeat center center;
+  background-size: cover;
+}
+.skills-sec {
+  background: url("img/rsz-roberto-nickson.png") no-repeat center center;
+  background-size: cover;
+
+}
+h1 {
+  font-size: 3em;
 }
 
+.home-sec > .name-title-div > h1 {
+  width: 40%;
+  padding-left: 10%;
+  text-shadow: -5px 2px 3px rgba(7, 7, 7, 0.6);
+
+  -webkit-box-shadow: -8px 11px 30px -10px rgba(255,255,255,1);
+  -moz-box-shadow: -8px 11px 30px -10px rgba(255,255,255,1);
+  box-shadow: -8px 11px 30px -10px rgba(255,255,255,1);
+}
+.home-sec > .name-title-div > h3:first-of-type {
+  padding-left: 12%
+}
+.home-sec > .name-title-div > h3:last-of-type {
+  bottom: 10%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+.intro-paragraph-div {
+  background-color: rgba(146,118,118,0.7);
+  height: 50%;
+  width: 60%;
+  margin: 5% auto;
+}
+.intro-sec > .intro-paragraph-div > .p-tag1, .intro-sec > .intro-paragraph-div > .p-tag2 {
+  padding: 0 5%;
+}
+
+.intro-sec > .intro-paragraph-div > h1 {
+  padding-left: 5%;
+  padding-top: 5%;
+  margin: 0;
+}
 // ********************************
 // $app-font-color: #333333;
 // $app-background-color: white;
