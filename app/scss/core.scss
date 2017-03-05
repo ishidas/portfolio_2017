@@ -12,6 +12,7 @@ $font-family-google4:'Raleway', sans-serif;
 $sakura-home: #693260;
 $sakura-intro: #a25a93;
 $sakura-edu: #986a81;
+$skills-opac-background: rgba(20,41,103,0.35);
 
 body {
   width: 100%;
@@ -45,22 +46,28 @@ nav > ul > a > li {
 }
 
 nav > ul > a > li[class=home-nav] {
-    background-color: #11151C;
+    // background-color: #11151C;
+    background-color: $sakura-home;
 }
 nav > ul > a > li[class=intro-nav] {
-    background-color: #212D40;
+    // background-color: #212D40;
+    background-color: $sakura-intro;
 }
 nav > ul > a > li[class=edu-nav] {
-    background-color: #364156;
+    // background-color: #364156;
+    background-color: $sakura-edu;
 }
 nav > ul > a > li[class=skills-nav] {
-    background-color: #212D40;
+    // background-color: #212D40;
+    background-color: $sakura-home;
 }
 nav > ul > a > li[class=git-nav] {
-    background-color: #364156;
+    // background-color: #364156;
+    background-color: $sakura-intro;
 }
 nav > ul > a > li[class=code-nav] {
-        background-color: #11151C;
+        // background-color: #11151C;
+        background-color: $sakura-edu;
 }
 
 nav > ul > a {
@@ -101,29 +108,65 @@ h1 {
   box-shadow: -8px 11px 30px -10px rgba(255,255,255,1);
 }
 .home-sec > .name-title-div > h3:first-of-type {
-  padding-left: 12%
+  padding-left: 12%;
+  font-size: 1.5em;
+  font-style: italic;
 }
 .home-sec > .name-title-div > h3:last-of-type {
   bottom: 10%;
   width: 100%;
   position: absolute;
   text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
 }
 .intro-paragraph-div {
   background-color: rgba(146,118,118,0.7);
-  height: 50%;
+  height: auto;
   width: 60%;
   margin: 5% auto;
 }
-.intro-sec > .intro-paragraph-div > .p-tag1, .intro-sec > .intro-paragraph-div > .p-tag2 {
-  padding: 0 5%;
+.intro-sec > .intro-paragraph-div > .p-tag1, .intro-sec > .intro-paragraph-div > .p-tag2, .skills-sec > .skills-div > ul {
+  padding: 5%;
+  margin: 0;
+  font-size: 1.5em;
 }
 
-.intro-sec > .intro-paragraph-div > h1 {
+.intro-sec > .intro-paragraph-div > h1, .skills-sec > .skills-div > h1 {
   padding-left: 5%;
   padding-top: 5%;
   margin: 0;
 }
+
+.skills-sec > .skills-div {
+  width: 65%;
+  height: auto;
+  margin: 5% 5% auto auto;
+  float: right;
+  background-color: $skills-opac-background;
+  -webkit-box-shadow: 10px 13px 18px -1px rgba(0,0,0,0.33);
+  -moz-box-shadow: 10px 13px 18px -1px rgba(0,0,0,0.33);
+  box-shadow: 10px 13px 18px -1px rgba(0,0,0,0.33);
+}
+.skills-sec > .skills-div > ul {
+  list-style: none;
+}
+.skills-sec > .skills-div > ul > li {
+  float: left;
+  margin: 5%;
+}
+
+.education-sec > .edu-div {
+  width: auto;
+  height: 80%;
+  border: 1px blue solid;
+}
+.education-sec > .edu-div > .edu-inner-div {
+  width: 50%;
+  float: left;
+  border: 1px red solid;
+}
+
 // ********************************
 // $app-font-color: #333333;
 // $app-background-color: white;
