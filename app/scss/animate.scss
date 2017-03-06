@@ -11,26 +11,27 @@
   border-radius: 50%;
 
   -webkit-animation: shooting 3s infinite;
+  -webkit-animation-delay: 1s;
   -moz-animation:    shooting 3s infinite;
   -o-animation:      shooting 3s infinite;
   animation:         shooting 3s infinite;
 }
 
 @-webkit-keyframes shooting {
-  from   { transform: translatex(-500px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  from   { transform: translatex(-200px) translateY(0px); }
+  to     { transform: translatex(0px) translateY(200px); }
 }
 @-moz-keyframes shooting {
-  from   { transform: translatex(-500px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  from   { transform: translatex(-200px) translateY(0px); }
+  to     { transform: translatex(0px) translateY(200px); }
 }
 @-o-keyframes shooting {
-  from   { transform: translatex(-500px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  from   { transform: translatex(-200px) translateY(0px); }
+  to     { transform: translatex(0px) translateY(200px); }
 }
 @keyframes shooting {
-  from   { transform: translatex(-500px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  from   { transform: translatex(-200px) translateY(0px); }
+  to     { transform: translatex(0px) translateY(200px); }
 }
 
 
@@ -46,6 +47,7 @@
   border-radius: 50%;
 
   -webkit-animation: shooting2 4s infinite;
+  -webkit-animation-delay: 4s;
   -moz-animation:    shooting2 4s infinite;
   -o-animation:      shooting2 4s infinite;
   animation:         shooting2 4s infinite;
@@ -53,19 +55,19 @@
 
 @-webkit-keyframes shooting2 {
   from   { transform: translatex(-400px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  to     { transform: translatex(0px) translateY(500px); }
 }
 @-moz-keyframes shooting2 {
   from   { transform: translatex(-400px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  to     { transform: translatex(0px) translateY(500px); }
 }
 @-o-keyframes shooting2 {
   from   { transform: translatex(-400px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  to     { transform: translatex(0px) translateY(500px); }
 }
 @keyframes shooting2 {
   from   { transform: translatex(-400px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  to     { transform: translatex(0px) translateY(500px); }
 }
 
 
@@ -89,19 +91,19 @@
 
 @-webkit-keyframes shooting3 {
   from   { transform: translatex(-400px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  to     { transform: translatex(0px) translateY(300px); }
 }
 @-moz-keyframes shooting3 {
   from   { transform: translatex(-400px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  to     { transform: translatex(0px) translateY(300px); }
 }
 @-o-keyframes shooting3 {
   from   { transform: translatex(-400px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  to     { transform: translatex(0px) translateY(300px); }
 }
 @keyframes shooting3 {
   from   { transform: translatex(-400px) translateY(0px); }
-  to     { transform: translatex(500px) translateY(500px); }
+  to     { transform: translatex(0px) translateY(300px); }
 }
 
 
@@ -125,19 +127,19 @@
 
 @-webkit-keyframes shooting4 {
   from   { transform: translatex(-900px) translateY(0px); }
-  to     { transform: translatex(700px) translateY(700px); }
+  to     { transform: translatex(0px) translateY(500px); }
 }
 @-moz-keyframes shooting4 {
   from   { transform: translatex(-900px) translateY(0px); }
-  to     { transform: translatex(700px) translateY(700px); }
+  to     { transform: translatex(0px) translateY(500px); }
 }
 @-o-keyframes shooting4 {
   from   { transform: translatex(-900px) translateY(0px); }
-  to     { transform: translatex(700px) translateY(700px); }
+  to     { transform: translatex(0px) translateY(500px); }
 }
 @keyframes shooting4 {
   from   { transform: translatex(-900px) translateY(0px); }
-  to     { transform: translatex(700px) translateY(700px); }
+  to     { transform: translatex(0px) translateY(500px); }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -154,6 +156,7 @@
     border-radius: 50%;
 
     -webkit-animation: shooting 5s infinite;
+    -webkit-animation-delay: 3s;
     -moz-animation:    shooting 5s infinite;
     -o-animation:      shooting 5s infinite;
     animation:         shooting 5s infinite;
@@ -171,6 +174,7 @@
     border-radius: 50%;
 
     -webkit-animation: shooting2 6s infinite;
+    -webkit-animation-delay: 4s;
     -moz-animation:    shooting2 6s infinite;
     -o-animation:      shooting2 6s infinite;
     animation:         shooting2 6s infinite;
@@ -215,19 +219,19 @@
 
   @-webkit-keyframes shooting4 {
     from   { transform: translatex(-900px) translateY(0px); }
-    to     { transform: translatex(500px) translateY(500px); }
+    to     { transform: translatex(0px) translateY(200px); }
   }
   @-moz-keyframes shooting4 {
     from   { transform: translatex(-900px) translateY(0px); }
-    to     { transform: translatex(500px) translateY(500px); }
+    to     { transform: translatex(0px) translateY(200px); }
   }
   @-o-keyframes shooting4 {
     from   { transform: translatex(-900px) translateY(0px); }
-    to     { transform: translatex(500px) translateY(500px); }
+    to     { transform: translatex(0px) translateY(200px); }
   }
   @keyframes shooting4 {
     from   { transform: translatex(-900px) translateY(0px); }
-    to     { transform: translatex(500px) translateY(500px); }
+    to     { transform: translatex(0px) translateY(200px); }
   }
 
 }
