@@ -5,7 +5,8 @@ import ngRoute from 'angular-route';
 require('!style-loader!css-loader!sass-loader!./scss/core.scss');
 
 const bgimgUrl = require('./scss/img/mfnbfaciu1i-patrick-schneider.png');
-const bookImgUrl = require('./scss/img/books.png');
+const hamburgerPinkNav = require('./scss/img/hamburger-pink.png');
+const hamburgerWhiteNav = require('./scss/img/hamburger-white.png');
 const bulbsGif = require('./scss/img/bulbs-bg-animated.gif');
 const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($locationProvider) => {
   $locationProvider.html5Mode({
@@ -16,25 +17,63 @@ const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($
 App.controller('MainController', ['$scope','$location','$anchorScroll','$window','$element','$document', ($scope, $location, $anchorScroll, $window, $element, $document) => {
   $scope.test = 'testing';
   $scope.imgUrl = bgimgUrl;
-  $scope.bookImgUrl = bookImgUrl;
+  $scope.hamburgerPink = hamburgerPinkNav;
+  $scope.hamburgerWhite = hamburgerWhiteNav;
   $scope.bulbsGif = bulbsGif;
+  $scope.navControle = true;
+  $scope.hambergerMenuSwitch = false;
+  $scope.screenWidth = $window.innerWidth;
+  console.log($scope.screenWidth);
+  if ($scope.screenWidth > 481) {
+    $scope.navControle = false;
+  }
+  $scope.navChange = () => {
+    $scope.navControle = $scope.navControle ? false : true;
+    $scope.hambergerMenuSwitch = $scope.hamburgerMenuSwitch ? false : true;
+    console.log($scope.navControle);
+  }
 
   $scope.jumpToHome = () => {
+    if ($scope.screenWidth > 481) {
+      $scope.navControle = false;
+    } else {
+      $scope.navControle = true;
+      $scope.hambergerMenuSwitch = false;
+    }
+
     $location.hash('home');
     $anchorScroll();
   }
 
   $scope.jumpToIntro = () => {
+    if ($scope.screenWidth > 481) {
+      $scope.navControle = false;
+    } else {
+      $scope.navControle = true;
+      $scope.hambergerMenuSwitch = false;
+    }
     $location.hash('intro');
     $anchorScroll();
   }
 
   $scope.jumpToEducation = () => {
+    if ($scope.screenWidth > 481) {
+      $scope.navControle = false;
+    } else {
+      $scope.navControle = true;
+      $scope.hambergerMenuSwitch = false;
+    }
     $location.hash('education');
     $anchorScroll();
   }
 
   $scope.jumpToSkills = () => {
+    if ($scope.screenWidth > 481) {
+      $scope.navControle = false;
+    } else {
+      $scope.navControle = true;
+      $scope.hambergerMenuSwitch = false;
+    }
     $location.hash('skills');
     $anchorScroll();
   }

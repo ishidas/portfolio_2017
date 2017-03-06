@@ -1,4 +1,4 @@
-<nav class="col-1">
+<nav ng-if="!navControle" ng-class="navControle ? 'col-1' : 'nav-app-mode'">
   <ul class="nav-element">
     <a href="" ng-click="jumpToHome()"><li class="home-nav">Home</li></a>
     <a href="" ng-click="jumpToIntro()"><li class="intro-nav">Intro</li></a>
@@ -8,3 +8,6 @@
     <a href="https://codepen.io/ishidasCP/" target="_blank"><li class="code-nav">Codepen</li></a>
   </ul>
 </nav>
+<div class="hamburger-nav" ng-click="navChange()">
+  <img ng-src="{{hambergerMenuSwitch ? hamburgerWhite : hamburgerPink}}" alt="nav-books">
+</div>
