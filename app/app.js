@@ -7,7 +7,7 @@ require('!style-loader!css-loader!sass-loader!./scss/core.scss');
 const bgimgUrl = require('./scss/img/books.png');
 const hamburgerPinkNav = require('./scss/img/hamburger-pink.png');
 const hamburgerWhiteNav = require('./scss/img/hamburger-white.png');
-const bulbsGif = require('./scss/img/bulbs-bg-animated.gif');
+
 const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($locationProvider) => {
   $locationProvider.html5Mode({
     enabled: true,
@@ -15,11 +15,10 @@ const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($
   });
 }])
 App.controller('MainController', ['$scope','$location','$anchorScroll','$window','$element','$document', ($scope, $location, $anchorScroll, $window, $element, $document) => {
-  $scope.test = 'testing';
   $scope.imgUrl = bgimgUrl;
   $scope.hamburgerPink = hamburgerPinkNav;
   $scope.hamburgerWhite = hamburgerWhiteNav;
-  $scope.bulbsGif = bulbsGif;
+
   $scope.navControle = true;
   $scope.hambergerMenuSwitch = false;
   $scope.screenWidth = $window.innerWidth;
