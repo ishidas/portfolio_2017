@@ -36,39 +36,20 @@ nav > ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #212D40;
+  background-color: rgba(255, 255, 255, 0.41);
 }
 
 nav > ul > a > li {
   height: 16%;
   text-align: center;
   line-height: 5;
-  color: white;
-}
+  color: #373038;
+  text-shadow: -1px 2px 1px rgb(218, 218, 218);
+  font-weight: bold;
 
-nav > ul > a > li[class=home-nav] {
-    // background-color: #11151C;
-    background-color: $sakura-home;
-}
-nav > ul > a > li[class=intro-nav] {
-    // background-color: #212D40;
-    background-color: $sakura-intro;
-}
-nav > ul > a > li[class=edu-nav] {
-    // background-color: #364156;
-    background-color: $sakura-edu;
-}
-nav > ul > a > li[class=skills-nav] {
-    // background-color: #212D40;
-    background-color: $sakura-home;
-}
-nav > ul > a > li[class=git-nav] {
-    // background-color: #364156;
-    background-color: $sakura-intro;
-}
-nav > ul > a > li[class=code-nav] {
-        // background-color: #11151C;
-        background-color: $sakura-edu;
+  -webkit-box-shadow: -8px 11px 30px -10px rgba(255,255,255,1);
+  -moz-box-shadow: -8px 11px 30px -10px rgba(255,255,255,1);
+  box-shadow: -8px 11px 30px -10px rgba(255,255,255,1);
 }
 
 nav > ul > a {
@@ -90,8 +71,9 @@ nav > ul > a {
 
 .home-sec, .intro-sec, .skills-sec, .education-sec {
   height: 100vh;
+  width: 100%;
   position: relative;
-  left: 8.33%;
+  // left: 8.33%;
 }
 
 .home-sec {
@@ -103,12 +85,30 @@ nav > ul > a {
   background-size: cover;
 }
 .skills-sec {
-  background: url("img/rsz-roberto-nickson.png") no-repeat center center;
-  background-size: cover;
+  // background: url("img/rsz-roberto-nickson.png") no-repeat center center;
+  // background-size: cover;
+  color: #5d5656;
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000000, #434343); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .education-sec {
-  background: url("img/alejandro-escamilla-6-mac.png") no-repeat center center;
-  background-size: cover;
+  // background: url("img/alejandro-escamilla-6-mac.png") no-repeat center center;
+  // background-size: cover;
+  color: #5d5656;
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #a25a93, #5FC3E4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #a25a93, #5FC3E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.education-sec > .edu-div {
+  width: 80%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.29);
+  margin: 5% 14%;
+
+  -webkit-box-shadow: -8px 11px 30px -10px black;
+  -moz-box-shadow: -8px 11px 30px -10px black;
+  box-shadow: -8px 11px 30px -10px black;
 }
 h1 {
   font-size: 3em;
@@ -118,10 +118,6 @@ h1 {
   width: 40%;
   padding-left: 10%;
   text-shadow: -5px 2px 3px rgba(7, 7, 7, 0.6);
-
-  -webkit-box-shadow: -8px 11px 30px -10px rgba(255,255,255,1);
-  -moz-box-shadow: -8px 11px 30px -10px rgba(255,255,255,1);
-  box-shadow: -8px 11px 30px -10px rgba(255,255,255,1);
 }
 .home-sec > .name-title-div > h3:first-of-type {
   padding-left: 12%;
@@ -148,7 +144,7 @@ h1 {
   background-color: rgba(146,118,118,0.7);
   height: auto;
   width: 60%;
-  margin: 5% auto;
+  margin: 5% 24%;
 }
 .intro-sec > .intro-paragraph-div > .p-tag1, .intro-sec > .intro-paragraph-div > .p-tag2, .skills-sec > .skills-div > ul {
   padding: 5%;
@@ -167,10 +163,11 @@ h1 {
   height: auto;
   margin: 5% 5% auto auto;
   float: right;
-  background-color: $skills-opac-background;
-  -webkit-box-shadow: 10px 13px 18px -1px rgba(0,0,0,0.33);
-  -moz-box-shadow: 10px 13px 18px -1px rgba(0,0,0,0.33);
-  box-shadow: 10px 13px 18px -1px rgba(0,0,0,0.33);
+  color: white;
+  background-color: rgba(76, 83, 103, 0.35);
+  -webkit-box-shadow: 10px 13px 18px -1px rgba(251, 251, 251, 0.35);
+  -moz-box-shadow: 10px 13px 18px -1px rgba(251, 251, 251, 0.35);
+  box-shadow: 10px 13px 18px -1px rgba(251, 251, 251, 0.35);
 }
 .skills-sec > .skills-div > ul {
   list-style: none;
@@ -179,20 +176,30 @@ h1 {
   float: left;
   margin: 5%;
 }
-
-// .education-sec > .edu-div {
-//   width: auto;
-//   height: 80%;
-//   border: 1px blue solid;
-// }
-.education-sec > .edu-inner-div {
+.skills-sec > .skills-div > .skills-books {
+  // float: left;
+  // height: auto;
+  width: auto;
+  position: absolute;
+  bottom: 15%;
+  left: 18%;
+}
+.skills-sec > .skills-div > .skills-books > img:first-child {
+  width: 65%;
+}
+.education-sec > .edu-div {
+  color: #373038;
+}
+.education-sec > .edu-div > .edu-inner-div {
   text-align: center;
   width: 90%;
-  margin: 2.5% 0 2.5% 0;
+  margin: 10% auto;
   // border: 1px red solid;
 }
-.education-sec > h1 {
-  padding-left: 4%;
+.education-sec > .edu-div > h1 {
+  margin: 0;
+  padding: 5%;
+  text-align: center;
 }
 
 // ********************************
@@ -223,7 +230,14 @@ h1 {
     color: white;
     z-index: 1;
   }
-
+  nav > ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(8, 8, 8, 0.95);
+  }
   .home-sec, .intro-sec, .skills-sec, .education-sec {
     height: 100vh;
     position: relative;
@@ -264,21 +278,30 @@ h1 {
     height: 54%;
   }
   .education-sec {
-    background-image: none;
+    color: #5d5656;
+    background: #2c3e50; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #a25a93, #5FC3E4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #a25a93, #5FC3E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
-  .education-sec > h1 {
+  .education-sec > .edu-div {
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.29);
+    margin: 19% auto;
+  }
+  .education-sec > .edu-div > h1 {
     padding-left: 15%;
     padding-top: 20%;
     margin: 0;
     font-size: 2em;
     padding-bottom: 5%;
   }
-  .education-sec > .edu-inner-div {
+  .education-sec > .edu-div > .edu-inner-div {
     text-align: center;
     width: 90%;
     margin: 5% 5%;
   }
-  .education-sec > .edu-inner-div > h3 {
+  .education-sec > .edu-div > .edu-inner-div > h3 {
     color: $sakura-h1;
   }
   .skills-sec > .skills-div > h1 {
@@ -294,7 +317,12 @@ h1 {
     -moz-box-shadow: 10px 13px 18px -1px rgba(0, 0, 0, 0.38);
     box-shadow: 10px 13px 18px -1px rgba(0, 0, 0, 0.38);
   }
-
+  .skills-sec > .skills-div > .skills-books {
+    width: auto;
+    position: absolute;
+    bottom: 3%;
+    left: 18%;
+  }
 }
 
 
@@ -304,6 +332,7 @@ h1 {
     position: fixed;
     height: 100%;
     width: 8.33%;
+    z-index: 1;
     // display: inline-block;
   }
 }

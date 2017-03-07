@@ -4,7 +4,7 @@ import ngRoute from 'angular-route';
 
 require('!style-loader!css-loader!sass-loader!./scss/core.scss');
 
-const bgimgUrl = require('./scss/img/mfnbfaciu1i-patrick-schneider.png');
+const bgimgUrl = require('./scss/img/books.png');
 const hamburgerPinkNav = require('./scss/img/hamburger-pink.png');
 const hamburgerWhiteNav = require('./scss/img/hamburger-white.png');
 const bulbsGif = require('./scss/img/bulbs-bg-animated.gif');
