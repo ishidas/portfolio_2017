@@ -1,4 +1,4 @@
-<nav ng-if="!navControle" ng-class="navControle ? 'col-1' : 'nav-app-mode'">
+<nav ng-if="!navControle" ng-class="!navControle ? 'nav-app-mode' : ''">
   <ul class="nav-element">
     <a href="" ng-click="jumpToHome()"><li class="home-nav">Home</li></a>
     <a href="" ng-click="jumpToIntro()"><li class="intro-nav">Intro</li></a>
