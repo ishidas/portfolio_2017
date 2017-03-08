@@ -53,7 +53,9 @@ nav > ul > a > li {
   font-weight: bold;
   display: inline-block;
 }
-
+nav > ul > a > li:hover {
+  color: #e183ea;
+}
 nav > ul > a {
   text-decoration: none;
 }
@@ -229,6 +231,10 @@ h1 {
     color: white;
     z-index: 1;
   }
+  nav.nav-app-mode > ul > a > li:focus {
+    background-color: rgba(229, 198, 232, 0.83);
+    margin: 0;
+  }
   nav > ul {
     width: 100%;
     height: 100%;
@@ -361,6 +367,10 @@ h1 {
     color: white;
     z-index: 1;
     font-size: 1.3em;
+  }
+  nav.nav-app-mode > ul > a > li:hover {
+    background-color: rgba(229, 198, 232, 0.83);
+    margin: 0;
   }
   nav > ul {
     width: 100%;
