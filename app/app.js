@@ -12,6 +12,10 @@ const byuHawaiiLogo = require('./scss/img/byuh.png');
 const skillsImg = require('./scss/img/mob_lauren-mancke-60627.png');
 const skillsImgBig = require('./scss/img/mob_lauren-mancke-60627.png');
 const studyImg = require('./scss/img/mob_aleks-dorohovich-26.png');
+const gitImg = require('./scss/img/git.png');
+const linkedInImg = require('./scss/img/linkedin.png');
+
+
 const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($locationProvider) => {
   $locationProvider.html5Mode({
     enabled: true,
@@ -28,6 +32,8 @@ App.controller('MainController', ['$scope','$location','$anchorScroll','$window'
   $scope.skillsImg = skillsImg;
   $scope.skillsBigImg = skillsImgBig;
   $scope.studyImg = studyImg;
+  $scope.gitImg = gitImg;
+  $scope.linkedInImg = linkedInImg;
   $scope.navControle = false;
   $scope.hambergerMenuSwitch = true;
   $scope.screenWidth = $window.innerWidth;
