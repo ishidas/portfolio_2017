@@ -7,7 +7,11 @@ const bgimgUrl = require('./scss/img/books.png');
 const hamburgerPinkNav = require('./scss/img/hamburger-pink.png');
 const hamburgerWhiteNav = require('./scss/img/hamburger-white.png');
 const downArrowsNav = require('./scss/img/down_arrows.png');
-
+const codeFellowsLogo = require('./scss/img/cf.png');
+const byuHawaiiLogo = require('./scss/img/byuh.png');
+const skillsImg = require('./scss/img/mob_lauren-mancke-60627.png');
+const skillsImgBig = require('./scss/img/mob_lauren-mancke-60627.png');
+const studyImg = require('./scss/img/mob_aleks-dorohovich-26.png');
 const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($locationProvider) => {
   $locationProvider.html5Mode({
     enabled: true,
@@ -19,7 +23,11 @@ App.controller('MainController', ['$scope','$location','$anchorScroll','$window'
   $scope.hamburgerPink = hamburgerWhiteNav;
   $scope.hamburgerWhite = hamburgerPinkNav;
   $scope.downArrows = downArrowsNav;
-
+  $scope.cfLogo = codeFellowsLogo;
+  $scope.byuhLogo = byuHawaiiLogo;
+  $scope.skillsImg = skillsImg;
+  $scope.skillsBigImg = skillsImgBig;
+  $scope.studyImg = studyImg;
   $scope.navControle = false;
   $scope.hambergerMenuSwitch = true;
   $scope.screenWidth = $window.innerWidth;
