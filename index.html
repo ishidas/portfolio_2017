@@ -12,7 +12,10 @@
   <body>
     <main ng-controller="MainController">
       <div class="hamburger-nav" ng-click="navChange()">
-        <img ng-src="{{hambergerMenuSwitch ? downArrows : downArrows}}" alt="nav-books">
+        <img ng-src="{{hambergerMenuSwitch ? downArrows : emptyImg}}" alt="nav-books">
+      </div>
+      <div class="macbook-img">
+        <img class="skills" ng-src="{{skillsImg}}" alt="Macbook Image">
       </div>
       <my-nav></my-nav>
       <my-intro-section></my-intro-section>

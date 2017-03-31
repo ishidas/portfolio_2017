@@ -27,6 +27,7 @@ App.controller('MainController', ['$scope','$location','$anchorScroll','$window'
   $scope.hamburgerPink = hamburgerWhiteNav;
   $scope.hamburgerWhite = hamburgerPinkNav;
   $scope.downArrows = downArrowsNav;
+  $scope.emptyImg = "";
   $scope.cfLogo = codeFellowsLogo;
   $scope.byuhLogo = byuHawaiiLogo;
   $scope.skillsImg = skillsImg;
