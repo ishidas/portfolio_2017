@@ -211,23 +211,26 @@ nav > ul > a {
 //     }
 //
 // }
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-width: 500px) {
   .hamburger-nav {
     text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
   }
   .hamburger-nav > img {
     width: 25px;
     margin: 0.5% 30%;
   }
   nav {
-    width: 100%;
-    top: 0%;
-    position: fixed;
-    z-index: 1;
-    text-align: right;
-    height: auto;
-    background-color: #e6e6e6;
+    // display: none;
+    // width: 100%;
+    // top: 0%;
+    // position: fixed;
+    // z-index: 1;
+    // text-align: right;
+    // height: auto;
+    // background-color: #e6e6e6;
   }
   nav.nav-app-mode > ul {
     height: 100%;
@@ -240,6 +243,7 @@ nav > ul > a {
     line-height: 5;
     color: #525252;
     z-index: 1;
+    background-color: rgb(234, 218, 218);
   }
   nav.nav-app-mode > ul > a {
     display: inline-block;
@@ -249,6 +253,10 @@ nav > ul > a {
     background-color: rgba(212, 209, 209, 0.48);
     margin: 0;
   }
+  nav.nav-app-mode > ul > a > li:hover {
+     background-color: rgba(189, 189, 189, 0.83);
+     margin: 0;
+   }
   .macbook-img > .skills {
     width: inherit;
     position: absolute;
@@ -331,10 +339,147 @@ nav > ul > a {
 
 }
 
-@media only screen  and (min-width : 481px) {
+@media only screen  and (min-width : 501px) and (max-width : 992px) {
+  .hamburger-nav {
+    display: none;
+  }
+  nav.nav-regular-mode {
+
+  }
+  .macbook-img > .skills {
+    width: 100%;
+    position: absolute;
+    top: 29%;
+    z-index: -1;
+  }
+  .education-sec > .edu-div > .edu-inner-div {
+    text-align: center;
+  }
+  .education-sec > .edu-div > .edu-h1 {
+    width: 50%;
+    bottom: 35%;
+    margin-left: 50%;
+    font-size: 1.5em;
+    line-height: 8em;
+  }
+  .education-sec > .edu-div > .edu-inner-div > h3 {
+    color: #f7f3f3;
+    font-size: 1.5em;
+    margin: 7% 0;
+    text-align: center;
+  }
+  .education-sec > .edu-div > .edu-inner-div > div > img {
+    width: 15%;
+  }
+  .study-img {
+    z-index: -2;
+    height: auto;
+    position: relative;
+    bottom: 5%;
+  }
+  .study-img > .study {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .skills-sec > .skills-div > .skills-h1 {
+    color: $font-color-full-stack;
+    font-size: 2em;
+    padding: 10%;
+  }
+  .skills-sec > .skills-div > ul {
+    list-style: none;
+    float: left;
+    padding: 5% 10%;
+    height: 30%;
+    margin: 0;
+  }
+  .skills-sec > .skills-div > ul > li {
+    float: left;
+    margin: 3%;
+  }
+  .skills-sec > .skills-div > .skills-footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .skills-sec > .skills-div > .skills-footer > a > img {
+    width: 10%;
+    margin: 5%;
+  }
+
 }
 
+@media only screen  and (min-width : 993px) {
+  .hamburger-nav {
+    display: none;
+  }
+  nav.nav-regular-mode {
 
+  }
+  .macbook-img > .skills {
+    width: 50%;
+    position: absolute;
+    top: 26%;
+    z-index: -1;
+  }
+  .education-sec > .edu-div > .edu-inner-div {
+    text-align: center;
+  }
+  .education-sec > .edu-div > .edu-h1 {
+    width: 50%;
+    bottom: 35%;
+    margin-left: 50%;
+    font-size: 1.5em;
+    line-height: 8em;
+  }
+  .education-sec > .edu-div > .edu-inner-div > h3 {
+    color: #f7f3f3;
+    font-size: 1.5em;
+    margin: 5% 0;
+    text-align: center;
+  }
+  .education-sec > .edu-div > .edu-inner-div > div > img {
+    width: 7%;
+  }
+  .study-img {
+    z-index: 1;
+    height: auto;
+    position: relative;
+    bottom: 0%;
+  }
+  .study-img > .study {
+    width: 35%;
+    position: absolute;
+    z-index: -1;
+    right: 7%;
+  }
+  .skills-sec > .skills-div > .skills-h1 {
+    color: $font-color-full-stack;
+    font-size: 2em;
+    padding: 10%;
+  }
+  .skills-sec > .skills-div > ul {
+    list-style: none;
+    float: left;
+    padding: 5% 10%;
+    height: 30%;
+    margin: 0;
+  }
+  .skills-sec > .skills-div > ul > li {
+    float: left;
+    margin: 3%;
+  }
+  .skills-sec > .skills-div > .skills-footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .skills-sec > .skills-div > .skills-footer > a > img {
+    width: 5%;
+    margin: 3%;
+  }
+}
 
 //
 // .home-sec, .intro-sec, .skills-sec, .education-sec {

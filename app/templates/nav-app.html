@@ -1,4 +1,4 @@
-<nav class="nav-app-mode" ng-if="clicked">
+<nav ng-class="appMode ? 'nav-app-mode' : 'regular-mode'">
   <ul class="nav-element">
     <a href="" ng-click="jumpToHome()"><li class="home-nav">Home</li></a>
     <a href="" ng-click="jumpToIntro()"><li class="intro-nav">Intro</li></a>
