@@ -104,6 +104,7 @@ nav > ul > a {
   font-size: 1.5em;
   line-height: 8em;
 }
+
 //
 // @media only screen  and (max-width : 480px) {
 //   .hamburger-nav {
@@ -278,6 +279,13 @@ nav > ul > a {
     height: 20%;
     width: 50%;
   }
+  .strong1 {
+    font-size: 1.5em;
+  }
+  .strong2 {
+    color: white;
+    font-size: 1.5em;
+  }
   .intro-sec > .intro-paragraph-div > .p-tag1, .intro-sec > .intro-paragraph-div > .p-tag2 {
     width: 50%;
     display: inline-block;
@@ -343,8 +351,15 @@ nav > ul > a {
   .hamburger-nav {
     display: none;
   }
-  nav.nav-regular-mode {
-
+  body {
+    font-size: 1.2em;
+  }
+  .strong1 {
+    font-size: 1.5em;
+  }
+  .strong2 {
+    color: white;
+    font-size: 1.5em;
   }
   .macbook-img > .skills {
     width: 100%;
@@ -357,10 +372,11 @@ nav > ul > a {
   }
   .education-sec > .edu-div > .edu-h1 {
     width: 50%;
+    height: 20%;
     bottom: 35%;
     margin-left: 50%;
     font-size: 1.5em;
-    line-height: 8em;
+    line-height: 7em;
   }
   .education-sec > .edu-div > .edu-inner-div > h3 {
     color: #f7f3f3;
@@ -369,7 +385,7 @@ nav > ul > a {
     text-align: center;
   }
   .education-sec > .edu-div > .edu-inner-div > div > img {
-    width: 15%;
+    width: 10%;
   }
   .study-img {
     z-index: -2;
@@ -414,14 +430,34 @@ nav > ul > a {
   .hamburger-nav {
     display: none;
   }
-  nav.nav-regular-mode {
-
+  body {
+    font-size: 1.2em;
+  }
+  .home-sec > .name-title-div > h3 {
+    font-size: 1.5em;
+  }
+  .intro-sec > .intro-paragraph-div > h1 {
+    height: auto;
+  }
+  .strong1 {
+    font-size: 2em;
+  }
+  .strong2 {
+    color: white;
+    font-size: 2em;
+  }
+  .intro-sec > .intro-paragraph-div > .p-tag1 {
+    background-color: rgb(236, 236, 236);
+  }
+  .macbook-img {
+    width: 100%;
+    top: 18%;
+    position: absolute;
+    z-index: -1;
+    left: 3%;
   }
   .macbook-img > .skills {
-    width: 50%;
-    position: absolute;
-    top: 26%;
-    z-index: -1;
+    width: 40%;
   }
   .education-sec > .edu-div > .edu-inner-div {
     text-align: center;
@@ -431,7 +467,7 @@ nav > ul > a {
     bottom: 35%;
     margin-left: 50%;
     font-size: 1.5em;
-    line-height: 8em;
+    line-height: 6em;
   }
   .education-sec > .edu-div > .edu-inner-div > h3 {
     color: #f7f3f3;
@@ -457,7 +493,7 @@ nav > ul > a {
   .skills-sec > .skills-div > .skills-h1 {
     color: $font-color-full-stack;
     font-size: 2em;
-    padding: 10%;
+    padding: 7% 5% 2% 7%;
   }
   .skills-sec > .skills-div > ul {
     list-style: none;
