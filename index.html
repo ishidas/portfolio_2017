@@ -11,8 +11,11 @@
   </head>
   <body>
     <main ng-controller="MainController">
-      <div class="hamburger-nav" ng-click="navChange()">
-        <img ng-src="{{hambergerMenuSwitch ? hamburgerWhite : hamburgerPink}}" alt="nav-books">
+      <div class="hamburger-nav" ng-click="navChange()" ng-if="!clicked">
+        <img ng-src="{{downArrows}}" alt="nav-books">
+      </div>
+      <div class="macbook-img">
+        <img class="skills" ng-src="{{skillsImg}}" alt="Macbook Image">
       </div>
       <my-nav></my-nav>
       <my-intro-section></my-intro-section>

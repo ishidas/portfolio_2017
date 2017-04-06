@@ -6,6 +6,15 @@ require('!style-loader!css-loader!sass-loader!./scss/core.scss');
 const bgimgUrl = require('./scss/img/books.png');
 const hamburgerPinkNav = require('./scss/img/hamburger-pink.png');
 const hamburgerWhiteNav = require('./scss/img/hamburger-white.png');
+const downArrowsNav = require('./scss/img/down_arrows.png');
+const codeFellowsLogo = require('./scss/img/cf.png');
+const byuHawaiiLogo = require('./scss/img/byuh.png');
+const skillsImg = require('./scss/img/mob_lauren-mancke-60627.png');
+const skillsImgBig = require('./scss/img/mob_lauren-mancke-60627.png');
+const studyImg = require('./scss/img/mob_aleks-dorohovich-26.png');
+const gitImg = require('./scss/img/git.png');
+const linkedInImg = require('./scss/img/linkedin.png');
+
 
 const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($locationProvider) => {
   $locationProvider.html5Mode({
@@ -15,64 +24,58 @@ const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($
 }])
 App.controller('MainController', ['$scope','$location','$anchorScroll','$window','$element','$document', ($scope, $location, $anchorScroll, $window, $element, $document) => {
   $scope.imgUrl = bgimgUrl;
-  $scope.hamburgerPink = hamburgerPinkNav;
-  $scope.hamburgerWhite = hamburgerWhiteNav;
+  $scope.hamburgerPink = hamburgerWhiteNav;
+  $scope.hamburgerWhite = hamburgerPinkNav;
+  $scope.downArrows = downArrowsNav;
+  $scope.emptyImg = "";
+  $scope.cfLogo = codeFellowsLogo;
+  $scope.byuhLogo = byuHawaiiLogo;
+  $scope.skillsImg = skillsImg;
+  $scope.skillsBigImg = skillsImgBig;
+  $scope.studyImg = studyImg;
+  $scope.gitImg = gitImg;
+  $scope.linkedInImg = linkedInImg;
 
-  $scope.navControle = false;
-  $scope.hambergerMenuSwitch = true;
-  $scope.screenWidth = $window.innerWidth;
 
-  //watching for screen width change
-  angular.element($window).on('resize', () => {
     $scope.screenWidth = $window.innerWidth;
-    if($scope.screenWidth > 481) {
-      $scope.navControle = false;
+    if($scope.screenWidth > 500) {
+      $scope.clicked = true;
     } else {
-      $scope.navControle = true;
+      $scope.clicked = false;
     }
-  });
 
   //controles hamburger nav toggle
   $scope.navChange = () => {
-    $scope.navControle = $scope.navControle ? false : true;
-    $scope.hambergerMenuSwitch = $scope.hamburgerMenuSwitch ? false : true;
+    $scope.clicked = $scope.clicked ? false : true;
   }
-  
+
   $scope.jumpToHome = () => {
-    if($scope.screenWidth > 481) {
-      $scope.navControle = false;
-    } else {
-      $scope.navControle = true;
+    if($scope.screenWidth < 500) {
+      $scope.clicked = false;
     }
     $location.hash('home');
     $anchorScroll();
   }
 
   $scope.jumpToIntro = () => {
-    if($scope.screenWidth > 481) {
-      $scope.navControle = false;
-    } else {
-      $scope.navControle = true;
+    if($scope.screenWidth < 500) {
+      $scope.clicked = false;
     }
     $location.hash('intro');
     $anchorScroll();
   }
 
   $scope.jumpToEducation = () => {
-    if($scope.screenWidth > 481) {
-      $scope.navControle = false;
-    } else {
-      $scope.navControle = true;
+    if($scope.screenWidth < 500) {
+      $scope.clicked = false;
     }
     $location.hash('education');
     $anchorScroll();
   }
 
   $scope.jumpToSkills = () => {
-    if($scope.screenWidth > 481) {
-      $scope.navControle = false;
-    } else {
-      $scope.navControle = true;
+    if($scope.screenWidth < 500) {
+      $scope.clicked = false;
     }
     $location.hash('skills');
     $anchorScroll();

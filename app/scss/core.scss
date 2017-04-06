@@ -1,43 +1,29 @@
 @import "./layout.scss";
-@import "./animate.scss";
+// @import "./animate.scss";
 
-$color-nav-home: darksalmon;
-$color-nav-intro: lightgoldenrodyellow;
-$app-link-hover: #6292BC;
-$app-link-visited: darkseagreen;
-$font-family-google: 'Arvo', serif;
+$background-color: #f7f7f7;
+$inner-background-color: #e4cace;
+$font-color: #525252;
+$font-color-full-stack: #f7f3f3;
+$link-hover: black;
 $font-family-google2:'Josefin Slab', serif;
-$font-family-google3:'Didact Gothic', sans-serif;
-$font-family-google4:'Raleway', sans-serif;
-$sakura-home: #693260;
-$sakura-intro: #a25a93;
-$sakura-edu: #986a81;
-$sakura-h1: #d229af;
-$skills-opac-background: rgba(20,41,103,0.35);
-
 
 body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-color: black;
-  color: white;
+  background-color: $background-color;
+  color: $font-color;
   font-family: $font-family-google2;
 }
 
 nav {
-  position: fixed;
-  height: 2%;
-  width: 100%;
-  z-index: 1;
   text-align: right;
-  background-color: rgba(4, 4, 4, 0.37);
   top: 2%;
 }
 
 nav > ul {
   width: 100%;
-  height: 5%;
   list-style: none;
   padding: 0;
   text-align: center;
@@ -46,421 +32,349 @@ nav > ul {
 }
 
 nav > ul > a > li {
-  font-size: 1em;
-  text-align: right;
   margin: 0% 3%;
-  color: white;
-  font-weight: bold;
   display: inline-block;
 }
 nav > ul > a > li:hover {
-  color: #e183ea;
+  color: $link-hover;
+  font-weight: bold;
+}
+nav > ul > a:visited {
+  color: $font-color;
 }
 nav > ul > a {
   text-decoration: none;
 }
 
-.hamburger-nav {
-  display: none;
-  position: fixed;
-  width: 100%;
-  float: left;
-  z-index: 1;
-}
-.hamburger-nav > img {
-  float: right;
-  width: 50px;
-  margin: 2%;
-}
-
-.home-sec, .intro-sec, .skills-sec, .education-sec {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  // left: 8.33%;
-}
-
-.home-sec {
-  background: url("img/rsz_adrian-benea-hawaii.png") no-repeat center center;
-  background-size: cover;
-}
-.home-sec > .name-title-div {
-  margin-top: 10%;
-}
-.intro-sec {
-  background: url("img/yuki-yoshida-resized.png") no-repeat center center;
-  background-size: cover;
-}
-.skills-sec {
-  color: #5d5656;
-  background: #2c3e50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #000000, #434343); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.education-sec {
-  color: #5d5656;
-  background: #FBD3E9; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #FBD3E9, #a25a93); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #FBD3E9, #a25a93); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.education-sec > .edu-div {
-  width: 80%;
-  height: 80%;
-  background: rgba(255, 255, 255, 0.29);
-  margin: 7% auto;
-  -webkit-box-shadow: -8px 11px 30px -10px black;
-  -moz-box-shadow: -8px 11px 30px -10px black;
-  box-shadow: -8px 11px 30px -10px black;
-}
-h1 {
-  font-size: 3em;
-}
-.home-sec > .name-title-div > h1 {
-  width: 40%;
-  padding-left: 10%;
-  text-shadow: -5px 2px 3px rgba(7, 7, 7, 0.6);
-}
-.home-sec > .name-title-div > h3:first-of-type {
-  padding-left: 12%;
-  font-size: 1.5em;
-  font-style: italic;
-}
-.home-sec > .name-title-div > h3:last-of-type {
-  bottom: 10%;
-  width: 100%;
+.home-sec > .name-title-div > h3, .home-sec > .inner-home-div > h1, .home-sec > .inner-home-div > h4{
   position: absolute;
   text-align: center;
-  font-size: 1.5em;
-  font-style: italic;
 }
-.home-sec > .name-title-div > p {
-  bottom: 5%;
+.home-sec > .name-title-div > h3 {
   width: 100%;
-  position: absolute;
-  text-align: center;
-  font-size: 0.8em;
-  font-style: italic;
+  top: 20%;
 }
-.intro-paragraph-div {
-  background-color: rgba(146,118,118,0.7);
-  height: auto;
-  width: 60%;
-  margin: 10% auto;
-}
-.intro-sec > .intro-paragraph-div > .p-tag1, .intro-sec > .intro-paragraph-div > .p-tag2, .skills-sec > .skills-div > ul {
-  padding: 5%;
-  margin: 0;
-  font-size: 1.5em;
-}
-.skills-sec > .skills-div > ul {
-  // margin: 20% 5%;
-  float: left;
-}
-.intro-sec > .intro-paragraph-div > h1 {
-  padding-left: 5%;
-  padding-top: 5%;
-  margin: 0;
-}
-.skills-sec > .skills-div > h1 {
-  float: left;
-  margin: 0;
-}
-.skills-sec > .skills-div {
+.home-sec > .inner-home-div > h1 {
   width: 80%;
-  height: auto;
-  margin: 10% auto;
-  color: white;
+  bottom: 35%;
+  color: $font-color-full-stack;
+  font-size: 2em;
 }
-.skills-sec > .skills-div > ul {
-  list-style: none;
-  float: left;
-}
-.skills-sec > .skills-div > ul > li {
-  float: left;
-  margin: 3%;
-}
-.skills-sec > .skills-div > .skills-books {
-  width: auto;
-  position: absolute;
-  bottom: 15%;
-  left: 18%;
-}
-.skills-sec > .skills-div > .skills-books > img:first-child {
+.home-sec > .inner-home-div > h4 {
   width: 50%;
-  text-align: center;
+  padding: 0 15%;
+  bottom: 15%;
 }
-.education-sec > .edu-div {
-  color: #373038;
+
+.home-sec > .inner-home-div, .intro-sec > .intro-paragraph-div, .education-sec > .edu-div, .skills-sec > .skills-div {
+  background-color: $inner-background-color;
 }
-.education-sec > .edu-div > .edu-inner-div {
+
+.intro-sec > .intro-paragraph-div > h1, .education-sec > .edu-div > h1 {
+  background-color: #f5efef;
+  line-height: 8em;
   text-align: center;
-  width: 90%;
-  margin: 10% auto;
 }
 .education-sec > .edu-div > h1 {
-  margin: 0;
-  padding: 5%;
-  text-align: center;
+  width: 80%;
+  bottom: 35%;
+  margin-left: 50%;
+  font-size: 1.5em;
+  line-height: 8em;
 }
 
-// ********************************
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
+@media only screen and (max-width: 500px) {
   .hamburger-nav {
-    display: inline-block;
+    text-align: center;
     position: fixed;
-    width: 45px;
-    right: 10%;
-    top: 5%;
+    width: 100%;
     z-index: 1;
   }
   .hamburger-nav > img {
-    float: right;
-    width: 40px;
+    width: 25px;
+    margin: 0.5% 30%;
   }
-  nav.nav-app-mode {
-    width: 100%;
-    height: auto;
-    z-index: 1;
+  nav.nav-app-mode > ul {
+    height: 100%;
   }
   nav.nav-app-mode > ul > a > li {
-    height: 16%;
+    width: 100%;
+    height: 15%;
+    margin: 0;
     text-align: center;
     line-height: 5;
-    color: white;
+    color: #525252;
     z-index: 1;
+    background-color: rgb(234, 218, 218);
+  }
+  nav.nav-app-mode > ul > a {
+    display: inline-block;
+    width: 100%;
   }
   nav.nav-app-mode > ul > a > li:focus {
-    background-color: rgba(229, 198, 232, 0.83);
+    background-color: rgba(212, 209, 209, 0.48);
     margin: 0;
-  }
-  nav > ul {
-    width: 100%;
-    height: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(8, 8, 8, 0.95);
-  }
-  .home-sec, .intro-sec, .skills-sec, .education-sec {
-    height: 100vh;
-    position: relative;
-    width: 100%;
-    left: 0;
-  }
-  .home-sec > .name-title-div > h1 {
-    margin-top: 10%;
-  }
-  .home-sec > .name-title-div > h3 {
-    color: $sakura-h1;
-  }
-  .intro-paragraph-div {
-    background-color: rgba(146, 118, 118, 0.7);
-    height: 95%;
-    width: 80%;
-    margin: 5% auto;
-  }
-  .intro-sec > .intro-paragraph-div > h1 {
-    padding-left: 5%;
-    padding-top: 5%;
-    margin: 0;
-    font-size: 2em;
-    color: $sakura-home;
-  }
-  .intro-sec > .intro-paragraph-div > .p-tag1 {
-    padding: 5%;
-    margin: 0;
-    font-size: 1.2em;
-    overflow: scroll;
-    height: 25%;
-  }
-  .intro-sec > .intro-paragraph-div > .p-tag2 {
-    padding: 5%;
-    margin: 0;
-    font-size: 1.2em;
-    overflow: scroll;
-    height: 54%;
-  }
-  .education-sec {
-    color: #5d5656;
-    background: #FBD3E9; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #FBD3E9, #a25a93); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #FBD3E9, #a25a93); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  .education-sec > .edu-div {
-    width: 80%;
-    height: 80%;
-    background: rgba(255, 255, 255, 0.29);
-    margin: 19% auto;
-  }
-  .education-sec > .edu-div > h1 {
-    padding-left: 15%;
-    padding-top: 20%;
-    margin: 0;
-    font-size: 2em;
-    padding-bottom: 5%;
-  }
-  .education-sec > .edu-div > .edu-inner-div {
-    text-align: center;
-    width: 90%;
-    margin: 5% 5%;
-  }
-  .education-sec > .edu-div > .edu-inner-div > h3 {
-    color: $sakura-h1;
-  }
-  .skills-sec > .skills-div > h1 {
-    font-size: 2em;
-    color: $sakura-intro;
-  }
-  .skills-sec .skills-div {
-    width: 90%;
-    height: 80%;
-    margin: 5% 5%;
-  }
-  .skills-sec > .skills-div > .skills-books {
-    width: auto;
-    position: absolute;
-    bottom: 3%;
-    left: 18%;
-  }
-}
-
-
-@media only screen  and (min-width : 481px) {
-/* Styles */
-  nav {
-    position: fixed;
-    height: 2%;
-    width: 100%;
-    z-index: 1;
-    text-align: right;
-    background-color: rgba(4, 4, 4, 0.37);
-    top: 2%;
-  }
-}
-
-@media only screen  and (max-width : 480px) {
-  /* Styles */
-  .hamburger-nav {
-    display: inline-block;
-    position: fixed;
-    width: 45px;
-    right: 10%;
-    top: 5%;
-    z-index: 2;
-  }
-  .hamburger-nav > img {
-    float: right;
-    width: 40px;
-  }
-  nav.nav-app-mode {
-    width: 100%;
-    height: auto;
-    z-index: 1;
-  }
-  nav.nav-app-mode > ul > a > li {
-    height: 16%;
-    width: 100%;
-    text-align: center;
-    line-height: 5;
-    color: white;
-    z-index: 1;
-    font-size: 1.3em;
   }
   nav.nav-app-mode > ul > a > li:hover {
-    background-color: rgba(229, 198, 232, 0.83);
-    margin: 0;
+     background-color: rgba(189, 189, 189, 0.83);
+     margin: 0;
+   }
+  .macbook-img > .skills {
+    width: inherit;
+    position: absolute;
+    top: 33%;
+    z-index: -1;
   }
-  nav > ul {
-    width: 100%;
-    height: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(8, 8, 8, 0.95);
-  }
-  .home-sec, .intro-sec, .skills-sec, .education-sec {
-    height: 100vh;
-    position: relative;
-    width: 100%;
-    left: 0;
-  }
-  .home-sec > .name-title-div > h1 {
-    margin-top: 10%;
-  }
-  .home-sec > .name-title-div > h3 {
-    color: white;
-  }
-  .intro-paragraph-div {
-    background-color: rgba(146, 118, 118, 0.7);
-    height: 80%;
+  .home-sec > .inner-home-div > h1 {
     width: 80%;
-    margin: 18% auto;
-  }
-  .intro-sec > .intro-paragraph-div > h1 {
-    padding-left: 5%;
-    padding-top: 5%;
-    margin: 0;
+    bottom: 30%;
+    color: #f7f3f3;
     font-size: 2em;
-    color: $sakura-home;
   }
-  .intro-sec > .intro-paragraph-div > .p-tag1 {
-    padding: 5%;
+  .home-sec > .inner-home-div > h4 {
+    width: 80%;
+    padding: 0;
+    bottom: 10%;
+  }
+  .intro-sec > .intro-paragraph-div > h1, .education-sec > .edu-div > h1 {
+    height: 20%;
+    width: 50%;
+  }
+  .strong1 {
+    font-size: 1.5em;
+  }
+  .strong2 {
+    color: white;
+    font-size: 1.5em;
+  }
+  .intro-sec > .intro-paragraph-div > .p-tag1, .intro-sec > .intro-paragraph-div > .p-tag2 {
+    width: 50%;
+    display: inline-block;
+    padding: 2% 2.5%;
     margin: 0;
-    font-size: 1.2em;
-    overflow: scroll;
-    height: 25%;
+    // border: 1px red solid; //remove
   }
   .intro-sec > .intro-paragraph-div > .p-tag2 {
-    padding: 5%;
-    margin: 0;
-    font-size: 1.2em;
+    height: 37%;
     overflow: scroll;
-    height: 54%;
-  }
-  .education-sec {
-    color: #5d5656;
-    background: #FBD3E9; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #FBD3E9, #a25a93); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #FBD3E9, #a25a93); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  .education-sec > .edu-div {
-    width: 80%;
-    height: 80%;
-    background: rgba(255, 255, 255, 0.29);
-    margin: 19% auto;
-  }
-  .education-sec > .edu-div > h1 {
-    padding-left: 15%;
-    padding-top: 20%;
-    margin: 0;
-    font-size: 2em;
-    padding-bottom: 5%;
   }
   .education-sec > .edu-div > .edu-inner-div {
     text-align: center;
-    width: 90%;
-    margin: 5% 5%;
   }
   .education-sec > .edu-div > .edu-inner-div > h3 {
-    color: #373038;
+    color: $font-color-full-stack;
+    font-size: 1.5em;
+    margin: 10% 0;
   }
-  .skills-sec > .skills-div > h1 {
-    font-size: 2em;
-    color: $sakura-intro;
+  .education-sec > .edu-div > .edu-inner-div > div > img {
+    width: 15%;
   }
-  .skills-sec .skills-div {
-    width: 90%;
-    height: 80%;
-    margin: 20% 5%;
-    box-shadow: 10px 13px 18px -1px rgba(0, 0, 0, 0.38);
+
+  .study-img {
+    z-index: -2;
+    height: auto;
+    position: relative;
+    bottom: 5%;
   }
-  .skills-sec > .skills-div > .skills-books {
-    width: auto;
-    bottom: 10%;
+  .study-img > .study {
+    width: inherit;
     position: absolute;
+    z-index: -1;
+  }
+  .skills-sec > .skills-div > .skills-h1 {
+    color: $font-color-full-stack;
+    font-size: 2em;
+    padding: 10%;
+  }
+  .skills-sec > .skills-div > ul {
+    list-style: none;
+    float: left;
+    padding: 10%;
+    height: 50%;
+  }
+  .skills-sec > .skills-div > ul > li {
+    float: left;
+    margin: 3%;
+  }
+  .skills-sec > .skills-div > .skills-footer {
+    display: inline-block;
+    width: 100%;
     text-align: center;
-    left: 5%;
+  }
+  .skills-sec > .skills-div > .skills-footer > a > img {
+    width: 10%;
+    margin: 5%;
+  }
+
+}
+
+@media only screen  and (min-width : 501px) and (max-width : 992px) {
+  .hamburger-nav {
+    display: none;
+  }
+  body {
+    font-size: 1.2em;
+  }
+  .strong1 {
+    font-size: 1.5em;
+  }
+  .strong2 {
+    color: white;
+    font-size: 1.5em;
+  }
+  .macbook-img > .skills {
+    width: 100%;
+    position: absolute;
+    top: 29%;
+    z-index: -1;
+  }
+  .education-sec > .edu-div > .edu-inner-div {
+    text-align: center;
+  }
+  .education-sec > .edu-div > .edu-h1 {
+    width: 50%;
+    height: 20%;
+    bottom: 35%;
+    margin-left: 50%;
+    font-size: 1.5em;
+    line-height: 7em;
+  }
+  .education-sec > .edu-div > .edu-inner-div > h3 {
+    color: #f7f3f3;
+    font-size: 1.5em;
+    margin: 7% 0;
+    text-align: center;
+  }
+  .education-sec > .edu-div > .edu-inner-div > div > img {
+    width: 10%;
+  }
+  .study-img {
+    z-index: -2;
+    height: auto;
+    position: relative;
+    bottom: 5%;
+  }
+  .study-img > .study {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .skills-sec > .skills-div > .skills-h1 {
+    color: $font-color-full-stack;
+    font-size: 2em;
+    padding: 10%;
+  }
+  .skills-sec > .skills-div > ul {
+    list-style: none;
+    float: left;
+    padding: 5% 10%;
+    height: 30%;
+    margin: 0;
+  }
+  .skills-sec > .skills-div > ul > li {
+    float: left;
+    margin: 3%;
+  }
+  .skills-sec > .skills-div > .skills-footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .skills-sec > .skills-div > .skills-footer > a > img {
+    width: 10%;
+    margin: 5%;
+  }
+
+}
+
+@media only screen  and (min-width : 993px) {
+  .hamburger-nav {
+    display: none;
+  }
+  body {
+    font-size: 1.2em;
+  }
+  .home-sec > .name-title-div > h3 {
+    font-size: 1.5em;
+  }
+  .intro-sec > .intro-paragraph-div > h1 {
+    height: auto;
+  }
+  .strong1 {
+    font-size: 2em;
+  }
+  .strong2 {
+    color: white;
+    font-size: 2em;
+  }
+  .intro-sec > .intro-paragraph-div > .p-tag1 {
+    background-color: rgb(236, 236, 236);
+  }
+  .macbook-img {
+    width: 100%;
+    top: 26%;
+    position: absolute;
+    z-index: -1;
+    left: 3%;
+  }
+  .macbook-img > .skills {
+    width: 35%;
+  }
+  .education-sec > .edu-div > .edu-inner-div {
+    text-align: center;
+  }
+  .education-sec > .edu-div > .edu-h1 {
+    width: 50%;
+    bottom: 35%;
+    margin-left: 50%;
+    font-size: 1.5em;
+    line-height: 6em;
+  }
+  .education-sec > .edu-div > .edu-inner-div > h3 {
+    color: #f7f3f3;
+    font-size: 1.5em;
+    margin: 5% 0;
+    text-align: center;
+  }
+  .education-sec > .edu-div > .edu-inner-div > div > img {
+    width: 7%;
+  }
+  .study-img {
+    z-index: 1;
+    height: auto;
+    position: relative;
+    bottom: 0%;
+  }
+  .study-img > .study {
+    width: 35%;
+    position: absolute;
+    z-index: -1;
+    right: 7%;
+  }
+  .skills-sec > .skills-div > .skills-h1 {
+    color: $font-color-full-stack;
+    font-size: 2em;
+    padding: 7% 5% 2% 7%;
+  }
+  .skills-sec > .skills-div > ul {
+    list-style: none;
+    float: left;
+    padding: 5% 10%;
+    height: 30%;
+    margin: 0;
+  }
+  .skills-sec > .skills-div > ul > li {
+    float: left;
+    margin: 3%;
+  }
+  .skills-sec > .skills-div > .skills-footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .skills-sec > .skills-div > .skills-footer > a > img {
+    width: 5%;
+    margin: 3%;
   }
 }
