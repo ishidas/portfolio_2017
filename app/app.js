@@ -3,9 +3,6 @@ import ngRoute from 'angular-route';
 
 require('!style-loader!css-loader!sass-loader!./scss/core.scss');
 
-// const bgimgUrl = require('./scss/img/books.png');
-// const hamburgerPinkNav = require('./scss/img/hamburger-pink.png');
-// const hamburgerWhiteNav = require('./scss/img/hamburger-white.png');
 const downArrowsNav = require('./scss/img/down_arrows.png');
 const codeFellowsLogo = require('./scss/img/cf.png');
 const byuHawaiiLogo = require('./scss/img/byuh.png');
@@ -23,9 +20,6 @@ const App = angular.module('myApp', ['ngRoute']).config(['$locationProvider', ($
   });
 }])
 App.controller('MainController', ['$scope','$location','$anchorScroll','$window','$element','$document', ($scope, $location, $anchorScroll, $window, $element, $document) => {
-  // $scope.imgUrl = bgimgUrl;
-  // $scope.hamburgerPink = hamburgerWhiteNav;
-  // $scope.hamburgerWhite = hamburgerPinkNav;
   $scope.downArrows = downArrowsNav;
   $scope.emptyImg = "";
   $scope.cfLogo = codeFellowsLogo;
