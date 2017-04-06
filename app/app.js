@@ -36,100 +36,46 @@ App.controller('MainController', ['$scope','$location','$anchorScroll','$window'
   $scope.gitImg = gitImg;
   $scope.linkedInImg = linkedInImg;
 
-  // $scope.navControle;
-  // $scope.hambergerMenuSwitch;
 
-  // $scope.screenWidth = $window.innerWidth;
-  // $scope.navAppMode;
-  // //watching for screen width change
-  // angular.element($window).on('resize', () => {
     $scope.screenWidth = $window.innerWidth;
     if($scope.screenWidth > 500) {
       $scope.clicked = true;
-  // //     $scope.navControle = true;
-  // //     $scope.navAppMode = false;
-  // //     $scope.hambergerMenuSwitch = false;
-  // //     console.log('nav ' + $scope.navControle);
     } else {
       $scope.clicked = false;
-  //     $scope.navControle = true;
-  //     $scope.navAppMode = true;
-  // //     $scope.hambergerMenuSwitch = true;
     }
-  // });
 
   //controles hamburger nav toggle
   $scope.navChange = () => {
     $scope.clicked = $scope.clicked ? false : true;
-    // $scope.appMode = $scope.appMode ? false : true;
-  //   $scope.navControle = true;
-    // $scope.hambergerMenuSwitch = $scope.hamburgerMenuSwitch ? false : true;
   }
 
   $scope.jumpToHome = () => {
-
-    if($scope.screenWidth > 500) {
-      // $scope.clicked = false;
-    //   $scope.navControle = true;
-    //   $scope.navAppMode = false;
-    //   $scope.hambergerMenuSwitch = false;
-    //
-    } else {
+    if($scope.screenWidth < 500) {
       $scope.clicked = false;
-    //   $scope.navControle = false;
-    //   $scope.navAppMode = true;
-    //   $scope.hambergerMenuSwitch = true;
     }
     $location.hash('home');
     $anchorScroll();
   }
 
   $scope.jumpToIntro = () => {
-    if($scope.screenWidth > 500) {
-      // $scope.clicked = false;
-    //   $scope.navControle = true;
-    //   $scope.navAppMode = false;
-    //   $scope.hambergerMenuSwitch = false;
-    //
-    } else {
+    if($scope.screenWidth < 500) {
       $scope.clicked = false;
-    //   $scope.navControle = false;
-    //   $scope.navAppMode = true;
-    //   $scope.hambergerMenuSwitch = true;
     }
     $location.hash('intro');
     $anchorScroll();
   }
 
   $scope.jumpToEducation = () => {
-    if($scope.screenWidth > 500) {
-      // $scope.clicked = false;
-    //   $scope.navControle = true;
-    //   $scope.navAppMode = false;
-    //   $scope.hambergerMenuSwitch = false;
-    //
-    } else {
+    if($scope.screenWidth < 500) {
       $scope.clicked = false;
-    //   $scope.navControle = false;
-    //   $scope.navAppMode = true;
-    //   $scope.hambergerMenuSwitch = true;
     }
     $location.hash('education');
     $anchorScroll();
   }
 
   $scope.jumpToSkills = () => {
-    if($scope.screenWidth > 500) {
-      // $scope.clicked = false;
-    //   $scope.navControle = true;
-    //   $scope.navAppMode = false;
-    //   $scope.hambergerMenuSwitch = false;
-    //
-    } else {
+    if($scope.screenWidth < 500) {
       $scope.clicked = false;
-    //   $scope.navControle = false;
-    //   $scope.navAppMode = true;
-    //   $scope.hambergerMenuSwitch = true;
     }
     $location.hash('skills');
     $anchorScroll();
